@@ -3,7 +3,7 @@
 
 = iDJ Features =
 
-Core features:
+== Core features ==
   * Loading and playing of MP3 songs.
   * Cross-fader to mix between songs.
   * Forward/reverse (in-song navigation) by rotating the discs.
@@ -12,6 +12,6 @@ Core features:
   * Scratching effect.
   * Volume control (two channels).
 
-Extra features (P2):
+== Extra features (P2) ==
   * Equalizer.
   * "English Spin"
