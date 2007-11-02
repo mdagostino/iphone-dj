@@ -1,4 +1,4 @@
-#summary iDJ Users Guide
+#summary iDJ User's Guide
 #labels Featured,Phase-Requirements,Phase-Design
 
 = iDJ User's Guide =
@@ -6,6 +6,10 @@
 This page is intended as instructions both to users (how to use) and developers (how to implement).
 
 == Loading and playing of MP3 songs ==
+
+  * Double-tap the disc to open your iPod directory list.
+  * Click the song.
+  * The song is loaded, you return to the main view.
 
 == Cross-fader == 
 to mix between songs
