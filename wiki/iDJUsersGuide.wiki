@@ -9,13 +9,23 @@ This page is intended as instructions both to users (how to use) and developers 
 
   * Double-tap the disc to open your iPod directory list.
   * Click the song.
-  * The song is loaded, you return to the main view.
+  * The song is loaded, and you return to the main view.
 
 == Cross-fader == 
-to mix between songs
+The Cross-fader is used to mix between songs.
+
+  * The cross-fader is the big slider control in the bottom of the screen.
+  * Pull the slider to the far left to only hear Deck 1, pull it to the far right to only hear Deck 2.
+  * When the slider is in the middle, both Deck 1 and 2 are played with equal volume.
+
 
 == Forward/reverse (in-song navigation) ==
-by rotating the discs. 
+You navigate a song by rotating the records.
+
+  * Press a finger on one of the decks.
+  * Drag the finger clockwise to move forward in the song.
+  * Drag the finger counter-clockwise to move back in the song.
+  * Release the deck to let it resume playing.
 
 == Pitch control ==
 
