@@ -8,7 +8,7 @@
   * Cross-fader to mix between songs.
   * Forward/reverse (in-song navigation) by rotating the discs.
   * Pitch control with slider control.
-  * Pitch control by touching the discs ().
+  * Pitch control by touching the discs (still finger means slow down/stop).
   * Scratching effect.
   * Volume control (two channels).
 
