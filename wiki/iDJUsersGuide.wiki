@@ -1,0 +1,30 @@
+#summary iDJ Users Guide
+#labels Featured,Phase-Requirements,Phase-Design
+
+= iDJ User's Guide =
+
+This page is intended as instructions both to users (how to use) and developers (how to implement).
+
+== Loading and playing of MP3 songs ==
+
+== Cross-fader == 
+to mix between songs
+
+== Forward/reverse (in-song navigation) ==
+by rotating the discs. 
+
+== Pitch control ==
+
+=== with slider control. ===
+
+=== by touching the discs ===
+(still finger means slow down/stop)
+
+=== "English Spin" ===
+
+== Scratching ==
+
+== Volume control ==
+(two channels)
+
+== Equalizer ==
