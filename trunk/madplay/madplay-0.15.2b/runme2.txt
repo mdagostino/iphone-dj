@@ -1,0 +1,6 @@
+if /usr/local/bin/arm-apple-darwin-gcc \
+-DHAVE_CONFIG_H -I. -I. -I. -Iintl -DLOCALEDIR=\"/usr/local/share/locale\"  -I./  -Wall -g -O2 -MT audio_iphone.o -MD -MP -MF ".deps/audio_iphone.Tpo" -c -o audio_iphone.o audio_iphone.m; \
+then mv -f ".deps/audio_iphone.Tpo" ".deps/audio_iphone.Po"; else rm -f ".deps/audio_iphone.Tpo"; fi
+
+
+

@@ -1,0 +1,35 @@
+tag.o tag.o: tag.c config.h global.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/string.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h \
+  mad.h crc.h rgain.h tag.h
+
+config.h:
+
+global.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/string.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h:
+
+mad.h:
+
+crc.h:
+
+rgain.h:
+
+tag.h:
