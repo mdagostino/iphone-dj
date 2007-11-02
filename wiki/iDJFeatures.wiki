@@ -1,0 +1,6 @@
+#summary Summary of iDJ's feature set.
+#labels Featured,Phase-Design,Phase-Requirements
+
+= iDJ Features =
+
+  * Cross-fader.
