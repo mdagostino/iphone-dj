@@ -1,0 +1,29 @@
+getopt1.o getopt1.o: getopt1.c config.h getopt.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/ctype.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/runetype.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h
+
+config.h:
+
+getopt.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/ctype.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/runetype.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h:

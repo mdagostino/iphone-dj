@@ -1,0 +1,44 @@
+version.o version.o: version.c config.h global.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/string.h \
+  mad.h id3tag.h gettext.h intl/libintl.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/locale.h \
+  /usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_locale.h \
+  version.h
+
+config.h:
+
+global.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/stdio.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/sys/cdefs.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/machine/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/arm/_types.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/string.h:
+
+mad.h:
+
+id3tag.h:
+
+gettext.h:
+
+intl/libintl.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/locale.h:
+
+/usr/local/lib/gcc/arm-apple-darwin/4.0.1/../../../../arm-apple-darwin/include/_locale.h:
+
+version.h:
