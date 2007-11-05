@@ -1,0 +1,8 @@
+#summary iDJ control- and interface layout
+#labels Phase-Requirements,Phase-Implementation
+
+Current suggestion:
+
+http://iphone-dj.googlecode.com/svn/trunk/gfx/png/idj_layout.png
+
+The pitch/speed control grows when touched.
