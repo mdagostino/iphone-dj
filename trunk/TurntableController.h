@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import	"TurntableView.h";
+#import	"TurntableGLView.h";
 #import	"TurntableAudio.h";
 #import <GraphicsServices/GraphicsServices.h>
 
 
 @interface TurntableController : NSObject
 {
-	TurntableView *view;
+	TurntableGLView *view;
 	TurntableAudio *audio;
 	BOOL playingForwards;
 	float rate;
@@ -25,7 +25,7 @@
 	BOOL ticking;
 }
 
-- (TurntableView *) view;
+- (TurntableGLView *) view;
 - (TurntableAudio *) audio;
 - (void) playBackwards;
 - (void) playForwards;

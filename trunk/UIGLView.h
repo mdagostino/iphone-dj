@@ -11,6 +11,11 @@
 #import <CoreSurface/CoreSurface.h>
 
 
+
+void gluLookAt(float eyeX, float eyeY, float eyeZ, float lookAtX, float lookAtY, float lookAtZ, float upX, float upY, float upZ) ;
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // UIGLView
 //

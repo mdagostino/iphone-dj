@@ -50,22 +50,21 @@ Renderer *singleton;
                 selector: @selector(tick:)
                 userInfo: nil
                 repeats: YES];
-
 }
 
 -(void) tick:(NSTimer *)timer
 {
-	NSEnumerator *enumerator = [dirty objectEnumerator];
-	id view;
-
-	while (view = [enumerator nextObject]) {
-		[view setNeedsDisplay];
-	}
+//	NSEnumerator *enumerator = [dirty objectEnumerator];
+//	id view;
+//
+//	while (view = [enumerator nextObject]) {
+//		[view setNeedsDisplay];
+//	}
 	
 //	[dirty removeAllObjects];
-
+	[[[PartyApplication sharedInstance] completeView] setNeedsDisplay];
 	[renderTimer tick];
-	[leftController tick];
-	[rightController tick];
+//	[leftController tick];
+//	[rightController tick];
 }
 @end

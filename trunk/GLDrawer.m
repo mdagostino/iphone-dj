@@ -10,6 +10,8 @@
 
 
 @implementation GLDrawer
+-(void) initGL
+{}
 
 -(void) drawGL
 {

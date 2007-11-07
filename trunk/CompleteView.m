@@ -30,30 +30,29 @@ static BOOL near(CGPoint p1, CGPoint p2, int threshold)
 
 
 
-@interface FingerMagic : UIView
+@interface FingerMagic : GLDrawer
 {
 	CGPoint lastPoint[2];
 	BOOL visible[2];
 }
-- (id)initWithFrame:(CGRect)frame;
+- (id)init;
 
 -(void) hideFinger:(int)finger;
 
 -(void) updateFinger:(int) finger point:(CGPoint)point;
 
--(void) drawRect:(CGRect)frame;
+//-(void) drawRect:(CGRect)frame;
 
 
 @end
 
 @implementation FingerMagic
-- (id)initWithFrame:(CGRect)frame {
-	if ((self == [super initWithFrame:frame])!=nil) 
+- (id)init {
+	if ((self == [super init])!=nil) 
 	{
-		[self setOpaque:NO];
 		visible[0] = NO;
 		visible[1] = NO;
-		[Renderer markDirty:self];
+//		[Renderer markDirty:self];
 	}
 	return self;
 }	
@@ -71,32 +70,125 @@ static BOOL near(CGPoint p1, CGPoint p2, int threshold)
 //	[self setNeedsDisplay];
 }
 
-float clear[4] = {0.2,1,1,1};
-float finger1color[4] = {1, 0, 0, 0.5};
-float finger2color[4] = {1, 1, 0, 0.5};
+//float clear[4] = {0.2,1,1,1};
+//float finger1color[4] = {1, 0, 0, 0.5};
+//float finger2color[4] = {1, 1, 0, 0.5};
+//
 
--(void) drawRect:(CGRect)frame
+static GLfloat rectangle[] = {
+	-75.0f, -15,
+	75.0f, -15,
+	-75.0f,  15,
+	75.0f,  15
+};
+
+//-(void) drawRect:(CGRect)frame
+//{
+//	CGContextRef ctx = UICurrentContext();
+////
+////	CGContextSetFillColor(ctx, clear);
+//////	CGContextClearRect(ctx, [self frame]);
+////		CGContextFillRect(ctx, [self frame]);
+////
+//
+//	int i;
+//	for (i = 0; i < 2; i++)
+//	{
+//		if ( ! visible[i] )
+//			continue;
+//
+//		CGContextSetFillColor(ctx, i == 0 ? finger1color : finger2color);
+//
+//		CGRect rect = CGRectMake(lastPoint[i].x - 5, 0, 10, [self frame].size.height);
+//		CGContextFillRect(ctx, rect);
+//		rect = CGRectMake(0, lastPoint[i].y - 5, [self frame].size.width, 10);
+//		CGContextFillRect(ctx, rect);
+//	}
+//}
+
+
+
+-(void) initGL
 {
-	CGContextRef ctx = UICurrentContext();
-//
-//	CGContextSetFillColor(ctx, clear);
-////	CGContextClearRect(ctx, [self frame]);
-//		CGContextFillRect(ctx, [self frame]);
-//
+}
 
-	int i;
-	for (i = 0; i < 2; i++)
+-(void) drawGL
+{
+//		glClearColor(0, 0, 0, 0);
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+//		
+//    // Enable vertex arrays
+//    glEnableClientState(GL_VERTEX_ARRAY);
+//    glEnableClientState(GL_COLOR_ARRAY);
+	glClear (GL_COLOR_BUFFER_BIT);
+	glLoadIdentity();
+
+	glVertexPointer(2, GL_FLOAT, 0, rectangle);
+
+	glEnableClientState(GL_VERTEX_ARRAY);
+
+
+
+	int i=0;
+//	for (i = 0; i < 2; i++)
 	{
-		if ( ! visible[i] )
-			continue;
+//		if ( ! visible[i] )
+//			continue;
 
-		CGContextSetFillColor(ctx, i == 0 ? finger1color : finger2color);
+//		CGContextSetFillColor(ctx, i == 0 ? finger1color : finger2color);
 
-		CGRect rect = CGRectMake(lastPoint[i].x - 5, 0, 10, [self frame].size.height);
-		CGContextFillRect(ctx, rect);
-		rect = CGRectMake(0, lastPoint[i].y - 5, [self frame].size.width, 10);
-		CGContextFillRect(ctx, rect);
+//		CGRect rect = CGRectMake(lastPoint[i].x - 5, 0, 10, [self frame].size.height);
+		
+		glPushMatrix();
+			glTranslatef(lastPoint[i].x, lastPoint[i].y, 0.0f);
+			glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
+			glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+		glPopMatrix();
+
+		
+		
+		
+//		CGContextFillRect(ctx, rect);
+//		rect = CGRectMake(0, lastPoint[i].y - 5, [self frame].size.width, 10);
+//		CGContextFillRect(ctx, rect);
 	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+//	glPushMatrix();
+//		glTranslatef(0.7f, 1.5f, 0.0f);
+//		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
+//		glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//		glTranslatef(1.7f, 1.5f, 0.0f);
+//		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
+//		glColor4f(0.0f, 0.0f, 1.0f, 0.25f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//		glTranslatef(1.5f, 1.0f, 0.0f);
+//		glColor4f(1.0f, 1.0f, 0.0f, 0.75f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
 }
 
 - (BOOL)ignoresMouseEvents 
@@ -115,11 +207,12 @@ float finger2color[4] = {1, 1, 0, 0.5};
 	{
 		int screenOrientation = [UIHardware deviceOrientation: YES];
 		
-		UIImageView *backgroundImage = [[UIImageView alloc] initWithImage : [UIImage applicationImageNamed:@"gfx/png/Party Screen background 01.png"] ];
-		[self addSubview: backgroundImage];
-		[backgroundImage setRotationBy:-90.0];
-
-		[backgroundImage setOrigin: CGPointMake(0,0)];
+//		UIImageView *backgroundImage = [[UIImageView alloc] initWithImage : [UIImage applicationImageNamed:@"gfx/png/Party Screen background 01.png"] ];
+//		[self addSubview: backgroundImage];
+//		[backgroundImage setRotationBy:-90.0];
+//		[backgroundImage setOrigin: CGPointMake(0,0)];
+		
+		
 		
 		//if (screenOrientation == 3) {
 		//_controllerImage = [UIImage applicationImageNamed:@"controller_landscape.png"];
@@ -129,10 +222,10 @@ float finger2color[4] = {1, 1, 0, 0.5};
 		
 		leftView = [[[PartyApplication sharedInstance] leftTurntable] view];
 		rightView = [[[PartyApplication sharedInstance] rightTurntable] view];
-		[self addSubview: leftView];
-		[self addSubview: rightView];
-		[leftView setOrigin: CGPointMake(32, 16)];
-		[rightView setOrigin: CGPointMake(32, 262)];
+//		[self addSubview: leftView];
+//		[self addSubview: rightView];
+//		[leftView setOrigin: CGPointMake(32, 16)];
+//		[rightView setOrigin: CGPointMake(32, 262)];
 		
 		fingerObjects = [[NSMutableArray alloc] initWithCapacity:5];
 		[fingerObjects addObject:leftView];
@@ -141,12 +234,40 @@ float finger2color[4] = {1, 1, 0, 0.5};
 		finger1View = nil;
 		finger2View = nil;
 
-		fingerDisplay = [[FingerMagic alloc] initWithFrame:frame];
-		[self addSubview:fingerDisplay];
+//		fingerDisplay = [[FingerMagic alloc] initWithFrame:frame]; //uikit
+		fingerDisplay = [[FingerMagic alloc] init]; //opengl
+		// this makes it slow and off screen
+//		[fingerDisplay _createLayerWithFrame:frame];
+//		[self addSubview:fingerDisplay];
 
 
 //		[leftView setRotationBy:22.5];
 //		[rightView setRotationBy:-180];
+
+		turntableView = [ [TurntableGLView alloc] initWithController:[[PartyApplication sharedInstance] leftTurntable] ];
+		
+		
+		// init the views
+		[self beginScene];
+		glClearColor (0.25f, 0.25f, 0.25f, 1.0f);
+
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+
+		glMatrixMode(GL_PROJECTION);
+		glLoadIdentity();
+
+		int width = 320;
+		int height = 480;
+		glViewport(0, 0, width, height);
+		glOrthof(0.0f, 320.0f, 480.0f, 0.0f, -1.0f, 1.0f);
+
+		glMatrixMode(GL_MODELVIEW);
+		glLoadIdentity();
+
+		[turntableView initGL];
+		[self endScene];
+		
 	}
 
 	return self;
@@ -423,7 +544,23 @@ inline float sq(float f1)
 */
 }
 
+- (void) drawRect: (CGRect) rect
+{
+    [self beginScene];
+//    [self positionCamera];
+//
+//    glEnable(GL_DEPTH_TEST);
+//	glClearColor(0.3f, 0.3f, 0.4f, 1.0f);
+//    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
+//    glDisable(GL_CULL_FACE);
+//    DrawCube();
+
+	[turntableView drawGL];
+	[fingerDisplay drawGL];
+
+    [self endScene];
+}
 
 //
 //- (void)drawRect:(CGRect)rect{

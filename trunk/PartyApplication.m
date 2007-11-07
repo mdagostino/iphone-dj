@@ -41,6 +41,12 @@ static PartyApplication *_sharedInstance;
 }
 
 
+- (CompleteView *) completeView
+{
+	return cView;
+}
+
+
 - (void) applicationDidFinishLaunching: (id) unused
 {
 	NSLog(@"applicationDidFinishLaunching %d",[ UIHardware deviceOrientation: YES ]);
@@ -51,20 +57,26 @@ static PartyApplication *_sharedInstance;
 	NSLog(@"LKContext allContexts: %@", [LKContext allContexts]);
 	NSLog(@"LKContext local layer/level: %d/%d", [[LKContext localContext] layer], [[LKContext localContext] level]);
 
-
 	id renderer = [[Renderer alloc] init];
 
     [ self setUIOrientation:1 ];
 
 	_sharedInstance = self;
     UIWindow *window;
-
-    window = [[UIWindow alloc] initWithContentRect: [UIHardware
-        fullScreenApplicationContentRect]];
+	[UIHardware _setStatusBarHeight:0.0f];
+	[self setStatusBarMode:0 orientation:0 duration:0.0f fenceID:0];
 
     struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
-    rect.origin.x = rect.origin.y = 0.0f;
+	NSLog(@"%f, %f %fx%f", rect.origin.x,rect.origin.y, rect.size.width, rect.size.height);
 
+//    window = [[UIWindow alloc] initWithContentRect: [UIHardware
+//        fullScreenApplicationContentRect]];
+    window = [[UIWindow alloc] initWithContentRect: rect];
+
+//	frame.size.height -= [UIApplication statusBarRect].size.height;
+
+//	rect.origin.x = rect.origin.y = 0;
+	
 	NSLog(@"allocating turntables, doing left");
 	leftTurntable = [[TurntableController alloc] init];
 	NSLog(@"doing righT");
