@@ -16,7 +16,7 @@
 	if ( self = [super init] )
 	{
 		NSLog(@"doing view");
-		view = [[TurntableView alloc] initWithController:self];
+		view = [[TurntableGLView alloc] initWithController:self];
 		NSLog(@"doing audio");
 		audio = [[TurntableAudio alloc] init];
 		
@@ -38,7 +38,7 @@
 	return self;
 }
 
-- (TurntableView *) view
+- (TurntableGLView *) view
 {
 	return view;
 }
@@ -85,7 +85,10 @@
 	[watch tick];
 	viewRotationInDegrees = deltaMsec * rotationRatePerSecondInDegrees / 1000.0;
 //	if ( viewRotationInDegrees > 360
-	[view setRotationBy: viewRotationInDegrees];
+
+	// on for normal views
+//	[view setRotationBy: viewRotationInDegrees];
+
 //	[Renderer markDirty:view];
 }
 

@@ -25,5 +25,6 @@
 - (TurntableController *) leftTurntable;
 - (id) tables;
 + (PartyApplication *) sharedInstance;
+- (CompleteView *) completeView;
 
 @end

@@ -23,20 +23,22 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import	"TurntableView.h";
+#import	"UIGLView.h";
+#import	"TurntableGLView.h";
 #import "CrossFaderView.h";
 #import "Stopwatch.h";
 
-@interface CompleteView : UIView 
+@interface CompleteView : UIGLView 
 {
 //	BOOL fingerIn[2];
-	TurntableView *leftView;
-	TurntableView *rightView;
+	TurntableGLView *leftView;
+	TurntableGLView *rightView;
 	NSMutableArray *fingerObjects;
 	id finger1View;
 	id finger2View;
 	CGPoint lastPoint[2];
 	id fingerDisplay;
+	id turntableView;
 }
 
 - (id)initWithFrame:(CGRect)frame;

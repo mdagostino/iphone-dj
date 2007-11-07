@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Stopwatch.h"
-#import "TurntableView.h"
+#import "TurntableGLView.h"
 #import "PartyApplication.h"
 
 @interface Renderer : NSObject {
 	NSMutableArray *dirty;
 	Stopwatch *renderTimer;
-	TurntableView *leftView;
-	TurntableView *rightView;
+	TurntableGLView *leftView;
+	TurntableGLView *rightView;
 	id leftController;
 	id rightController;
 }
