@@ -52,38 +52,38 @@ static GLfloat rectangle[] = {
 //    // Enable vertex arrays
 //    glEnableClientState(GL_VERTEX_ARRAY);
 //    glEnableClientState(GL_COLOR_ARRAY);
-	glClear (GL_COLOR_BUFFER_BIT);
-	glLoadIdentity();
-
-	glVertexPointer(2, GL_FLOAT, 0, rectangle);
-
-	glEnableClientState(GL_VERTEX_ARRAY);
-
-	glPushMatrix();
-		glTranslatef(1.5f, 2.0f, 0.0f);
-		glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	glPopMatrix();
-
-	glPushMatrix();
-		glTranslatef(0.7f, 1.5f, 0.0f);
-		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
-		glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	glPopMatrix();
-
-	glPushMatrix();
-		glTranslatef(1.7f, 1.5f, 0.0f);
-		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
-		glColor4f(0.0f, 0.0f, 1.0f, 0.25f);
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	glPopMatrix();
-
-	glPushMatrix();
-		glTranslatef(1.5f, 1.0f, 0.0f);
-		glColor4f(1.0f, 1.0f, 0.0f, 0.75f);
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	glPopMatrix();
+//	glClear (GL_COLOR_BUFFER_BIT);
+//	glLoadIdentity();
+//
+//	glVertexPointer(2, GL_FLOAT, 0, rectangle);
+//
+//	glEnableClientState(GL_VERTEX_ARRAY);
+//
+//	glPushMatrix();
+//		glTranslatef(1.5f, 2.0f, 0.0f);
+//		glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//		glTranslatef(0.7f, 1.5f, 0.0f);
+//		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
+//		glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//		glTranslatef(1.7f, 1.5f, 0.0f);
+//		glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
+//		glColor4f(0.0f, 0.0f, 1.0f, 0.25f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
+//
+//	glPushMatrix();
+//		glTranslatef(1.5f, 1.0f, 0.0f);
+//		glColor4f(1.0f, 1.0f, 0.0f, 0.75f);
+//		glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//	glPopMatrix();
 }
 
 

@@ -36,7 +36,8 @@ static AQCallbackStruct in;
 //static int waveBuffer[WAVE_BUFFER_SIZE * WAVE_BUFFER_BANKS];
 //static long waveBufferSize = WAVE_BUFFER_SIZE * WAVE_BUFFER_BANKS;
 static long writeIdx,playIdx;
-static int waveBuffer[WAVE_BUFFER_SIZE];
+static int *waveBuffer = valloc(WAVE_BUFFER_SIZE);//[WAVE_BUFFER_SIZE]
+
 
 static int waveBufferWriteIdxEnd;
 
@@ -167,9 +168,6 @@ static void initAQAudio()
 
 void initAudioController()
 {
-	
-    double sampleRate = 44100.0;
-	
     NSLog(@"init()");
     memset(&waveBuffer, 0, sizeof(waveBuffer));
 	
@@ -178,7 +176,7 @@ void initAudioController()
     writeIdx = 0;
     playIdx = 0;
 	
-    in.mDataFormat.mSampleRate = sampleRate;
+    in.mDataFormat.mSampleRate = SAMPLE_RATE;
     in.mDataFormat.mFormatID = kAudioFormatLinearPCM;
     in.mDataFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger
 		| kAudioFormatFlagIsPacked;
