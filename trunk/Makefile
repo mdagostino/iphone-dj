@@ -16,6 +16,7 @@ MADPLAY=madplay/madplay-0.15.2b
 
 LIBMADFLAGS = -L$(MADPLAY) -L$(MADPLAY)/.libs/libmad.a $(MADPLAY)/.libs/libid3tag.a 
 
+
 CPPFLAGS = -I$(MADPLAY)
 
 PARTYOBJS = MasterAudioController.o PartyApplication.o CompleteView.o TurntableGLView.o \

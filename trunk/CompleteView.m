@@ -71,8 +71,8 @@ static BOOL near(CGPoint p1, CGPoint p2, int threshold)
 }
 
 //float clear[4] = {0.2,1,1,1};
-//float finger1color[4] = {1, 0, 0, 0.5};
-//float finger2color[4] = {1, 1, 0, 0.5};
+float finger1color[4] = {1, 0, 0, 0.5};
+float finger2color[4] = {1, 1, 0, 0.5};
 //
 
 static GLfloat rectangle[] = {
@@ -130,21 +130,27 @@ static GLfloat rectangle[] = {
 
 
 	int i=0;
-//	for (i = 0; i < 2; i++)
+	for (i = 0; i < 2; i++)
 	{
-//		if ( ! visible[i] )
-//			continue;
+		if ( ! visible[i] )
+			continue;
 
 //		CGContextSetFillColor(ctx, i == 0 ? finger1color : finger2color);
+		float *c = i == 0 ? finger1color : finger2color;
+		glColor4f(c[0], c[1], c[2], c[3]);
 
 //		CGRect rect = CGRectMake(lastPoint[i].x - 5, 0, 10, [self frame].size.height);
 		
 		glPushMatrix();
 			glTranslatef(lastPoint[i].x, lastPoint[i].y, 0.0f);
-			glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
 			glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 		glPopMatrix();
 
+		glPushMatrix();
+			glTranslatef(lastPoint[i].x, lastPoint[i].y, 0.0f);
+			glRotatef(90.0f, 0.0f ,0.0f, 1.0f);
+			glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+		glPopMatrix();
 		
 		
 		
@@ -334,23 +340,23 @@ static GLfloat rectangle[] = {
         unsigned int EventSubType = GSEventGetSubType(event);
         unsigned int EventType    = GSEventGetType(event);
 
-        printf("%d %d  %.3f %.3f ",
-               IsChording,ClickCount,
-               DeltaX,DeltaY);
-        
-        printf("(%.3f, %.3f) ",
-               InnerMostPathPos.x,
-               InnerMostPathPos.y);
-
-        printf("%d %d ",EventSubType,EventType);
-
-        //CGPoint origin = rect.origin;
-        //CGSize  size   = rect.size;
-
-        // print debug info
-        printf("org(x,y) %3.5f %3.5f",
-               loc.x,loc.y);
-        printf("\n");
+//        printf("%d %d  %.3f %.3f ",
+//               IsChording,ClickCount,
+//               DeltaX,DeltaY);
+//        
+//        printf("(%.3f, %.3f) ",
+//               InnerMostPathPos.x,
+//               InnerMostPathPos.y);
+//
+//        printf("%d %d ",EventSubType,EventType);
+//
+//        //CGPoint origin = rect.origin;
+//        //CGSize  size   = rect.size;
+//
+//        // print debug info
+//        printf("org(x,y) %3.5f %3.5f",
+//               loc.x,loc.y);
+//        printf("\n");
 
         return;
 }
@@ -397,7 +403,7 @@ static GLfloat rectangle[] = {
 	lastPoint[0] = p;
 
 	if ( finger1View == nil )
-		NSLog(@"mouseDragged without View");
+		;//NSLog(@"mouseDragged without View");
 	else
 	{
 		if ( [self inView:finger1View point:p] )
@@ -462,7 +468,7 @@ static GLfloat rectangle[] = {
 {
 	[self echoScreenPress:event];
 
-	NSLog(@"gestureChanged");
+//	NSLog(@"gestureChanged");
 
 	CGPoint p1 = [self getFinger1Press:event];
 	CGPoint p2 = [self getFinger2Press:event];
