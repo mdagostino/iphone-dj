@@ -16,19 +16,9 @@
  
  */
 
-#include <string.h>
-#include <stdio.h>
-#include <pthread.h>
-#include <sys/select.h>
-
-#include "mad.h"
-#include "audio.h"
-
-#import <UIKit/UIKit.h>
-#import <Foundation/NSLock.h>
-#import "AudioQueue.h"
 
 #import "MasterAudioController.h"
+
 
 static int cycles = 0;
 
@@ -36,7 +26,7 @@ static AQCallbackStruct in;
 //static int waveBuffer[WAVE_BUFFER_SIZE * WAVE_BUFFER_BANKS];
 //static long waveBufferSize = WAVE_BUFFER_SIZE * WAVE_BUFFER_BANKS;
 static long writeIdx,playIdx;
-static int *waveBuffer = valloc(WAVE_BUFFER_SIZE);//[WAVE_BUFFER_SIZE]
+static int *waveBuffer = NULL;//valloc((1152 * 4) * 2 * 20 * 2);//[WAVE_BUFFER_SIZE]
 
 
 static int waveBufferWriteIdxEnd;
@@ -169,6 +159,7 @@ static void initAQAudio()
 void initAudioController()
 {
     NSLog(@"init()");
+	waveBuffer = valloc(WAVE_BUFFER_SIZE);
     memset(&waveBuffer, 0, sizeof(waveBuffer));
 	
 	cycles = 0;

@@ -18,7 +18,6 @@
 		935374920CCC4DE60078ECBC /* CompleteView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CompleteView.h; sourceTree = "<group>"; };
 		935374930CCC4DE60078ECBC /* CompleteView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CompleteView.m; sourceTree = "<group>"; };
 		935374A60CCC4ED10078ECBC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
-		935374A70CCC4ED10078ECBC /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
 		935374A80CCC4F310078ECBC /* TurntableAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableAudio.h; sourceTree = "<group>"; };
 		935374A90CCC4F310078ECBC /* TurntableAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableAudio.m; sourceTree = "<group>"; };
 		935374AA0CCC4F450078ECBC /* TurntableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableController.h; sourceTree = "<group>"; };
@@ -30,6 +29,11 @@
 		93DAA0340CCEE82300F5D70C /* Stopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stopwatch.m; sourceTree = "<group>"; };
 		93DAA1200CCF0FE300F5D70C /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		93DAA1210CCF0FE300F5D70C /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		93E600F40D4962EB001DF7A6 /* TurntableGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableGLView.h; sourceTree = "<group>"; };
+		93E600F50D4962EB001DF7A6 /* TurntableGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableGLView.m; sourceTree = "<group>"; };
+		93E600F60D4963D3001DF7A6 /* UIGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGLView.h; sourceTree = "<group>"; };
+		93E600F70D4963D3001DF7A6 /* UIGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGLView.m; sourceTree = "<group>"; };
+		93E6015A0D4965E1001DF7A6 /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -42,13 +46,17 @@
 				935377170CCC6AC10078ECBC /* CrossFaderView.m */,
 				935374A60CCC4ED10078ECBC /* MasterAudioController.m */,
 				935374C00CCC50A70078ECBC /* MasterAudioController.h */,
-				935374A70CCC4ED10078ECBC /* AudioQueue.h */,
 				9353748E0CCC4DE60078ECBC /* main.m */,
 				9353748F0CCC4DE60078ECBC /* Makefile */,
+				93E6015A0D4965E1001DF7A6 /* AudioQueue.h */,
 				935374900CCC4DE60078ECBC /* PartyApplication.h */,
+				93E600F60D4963D3001DF7A6 /* UIGLView.h */,
+				93E600F70D4963D3001DF7A6 /* UIGLView.m */,
 				935374910CCC4DE60078ECBC /* PartyApplication.m */,
 				935374920CCC4DE60078ECBC /* CompleteView.h */,
 				935374930CCC4DE60078ECBC /* CompleteView.m */,
+				93E600F40D4962EB001DF7A6 /* TurntableGLView.h */,
+				93E600F50D4962EB001DF7A6 /* TurntableGLView.m */,
 				9322C2D90CD6D17D00CC106D /* TurntableView.h */,
 				9322C2DA0CD6D17D00CC106D /* TurntableView.m */,
 				935374A80CCC4F310078ECBC /* TurntableAudio.h */,
@@ -68,9 +76,11 @@
 		935374860CCC4D960078ECBC /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 935374870CCC4D960078ECBC /* Build configuration list for PBXProject "iphonedj" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 0;
 			mainGroup = 935374840CCC4D960078ECBC;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 			);
 		};

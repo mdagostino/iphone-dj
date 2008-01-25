@@ -93,7 +93,7 @@ static PartyApplication *_sharedInstance;
     [window setContentView: cView]; 
 
 	NSLog(@"going to initAudio");
-	initAudioController();
+	//initAudioController();
 
 
 	NSLog(@"throwing our shit in front bitches!!");

@@ -22,7 +22,6 @@
 #import <GraphicsServices/GraphicsServices.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
 #import	"UIGLView.h";
 #import	"TurntableGLView.h";
 #import "CrossFaderView.h";

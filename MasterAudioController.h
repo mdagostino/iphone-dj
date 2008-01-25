@@ -7,6 +7,19 @@
  *
  */
 
+#import "TurntableAudio.h"
+#import "AudioQueue.h"
+
+#include <string.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <sys/select.h>
+
+#include "mad.h"
+#include "audio.h"
+
+#import <UIKit/UIKit.h>
+#import <Foundation/NSLock.h>
 
 /* Audio Resources */
 #define AUDIO_BUFFERS 3
