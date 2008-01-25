@@ -27,8 +27,8 @@ all:   Party
 
 Party: main.o $(PARTYOBJS)
 	$(LD) $(LDFLAGS) $(LIBMADFLAGS) -o $@ $^
-	#scp Party root@hacked:
-	cp Party /Volumes/hacked/
+	scp Party root@hacked:/
+	#cp Party /Volumes/hacked/
 
 %.o:    %.m
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@

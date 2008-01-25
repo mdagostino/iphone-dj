@@ -1,8 +1,9 @@
 
 #define NDEBUG
+#include <CoreGraphics/CGDirectDisplay.h>
+#import <CoreSurface/CoreSurface.h>
 #include <OpenGLES/gl.h>
 #include <OpenGLES/egl.h>
-#include <CoreGraphics/CGDirectDisplay.h>
 
 #include <stdio.h>
 #include <unistd.h>
@@ -141,7 +142,7 @@ static GLfloat rectangle[] = {
 -( void) fingerDown:(CGPoint) point
 {
 	NSLog(@"fingerDown");
-	[controller pauseTicking];
+	//[controller pauseTicking];
 }
 -( void) fingerDrag:(CGPoint) point
 {
@@ -150,7 +151,7 @@ static GLfloat rectangle[] = {
 -( void) fingerUp:(CGPoint) point
 {
 	NSLog(@"fingerUP");
-	[controller resumeTicking];
+	//[controller resumeTicking];
 }
 
 

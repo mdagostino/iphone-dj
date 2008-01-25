@@ -18,7 +18,7 @@
 		NSLog(@"doing view");
 		view = [[TurntableGLView alloc] initWithController:self];
 		NSLog(@"doing audio");
-		audio = [[TurntableAudio alloc] init];
+		//audio = [[TurntableAudio alloc] init];
 		
 		NSLog(@"initing vars");
 		playingForwards = YES;
@@ -43,7 +43,7 @@
 	return view;
 }
 
-- (TurntableAudio *) audio
+- (TurntableAudioStruct *) audio
 {
 	return audio;
 }

@@ -7,8 +7,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #import <UIKit/UIView.h>
-#include <OpenGLES/egl.h>
 #import <CoreSurface/CoreSurface.h>
+#include <OpenGLES/egl.h>
+#include <OpenGLES/gl.h>
 
 
 

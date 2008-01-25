@@ -15,7 +15,8 @@
 @interface TurntableController : NSObject
 {
 	TurntableGLView *view;
-	TurntableAudio *audio;
+//	TurntableAudio *audio;
+	TurntableAudioStruct *audio;
 	BOOL playingForwards;
 	float rate;
 	unsigned int position;
@@ -26,7 +27,7 @@
 }
 
 - (TurntableGLView *) view;
-- (TurntableAudio *) audio;
+- (TurntableAudioStruct *) audio;
 - (void) playBackwards;
 - (void) playForwards;
 - (void) goToPosition:(unsigned int) pos;
