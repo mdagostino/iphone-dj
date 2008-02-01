@@ -36,6 +36,7 @@
 		E2999EAE0D5394FB004E77CC /* CompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteView.m; sourceTree = "<group>"; };
 		E2999EAF0D5394FB004E77CC /* CompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteView.h; sourceTree = "<group>"; };
 		E2999EB00D5394FB004E77CC /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
+		E299A0B00D53E38A004E77CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = resources/Default.png; sourceTree = "<group>"; };
 		E29E3CAD0D3D714E00617E16 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +97,7 @@
 			children = (
 				E2999EA70D5394D2004E77CC /* Info.plist */,
 				E2999EA80D5394D2004E77CC /* icon.png */,
+				E299A0B00D53E38A004E77CC /* Default.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
