@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E2999E930D5394AA004E77CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2999E940D5394AA004E77CC /* MasterAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterAudioController.h; sourceTree = "<group>"; };
+		E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
+		E2999E960D5394AA004E77CC /* MultiTouchUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTouchUIImageView.h; sourceTree = "<group>"; };
+		E2999E970D5394AA004E77CC /* MultiTouchUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiTouchUIImageView.m; sourceTree = "<group>"; };
+		E2999E980D5394AA004E77CC /* PartyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyApplication.h; sourceTree = "<group>"; };
+		E2999E990D5394AA004E77CC /* PartyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyApplication.m; sourceTree = "<group>"; };
+		E2999E9A0D5394AA004E77CC /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		E2999E9B0D5394AA004E77CC /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		E2999E9C0D5394AA004E77CC /* Stopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stopwatch.h; sourceTree = "<group>"; };
+		E2999E9D0D5394AA004E77CC /* Stopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stopwatch.m; sourceTree = "<group>"; };
+		E2999E9E0D5394AA004E77CC /* TurntableAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableAudio.h; sourceTree = "<group>"; };
+		E2999E9F0D5394AA004E77CC /* TurntableAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableAudio.m; sourceTree = "<group>"; };
+		E2999EA00D5394AA004E77CC /* TurntableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableController.h; sourceTree = "<group>"; };
+		E2999EA10D5394AA004E77CC /* TurntableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableController.m; sourceTree = "<group>"; };
+		E2999EA20D5394AA004E77CC /* TurntableGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableGLView.h; sourceTree = "<group>"; };
+		E2999EA30D5394AA004E77CC /* TurntableGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableGLView.m; sourceTree = "<group>"; };
+		E2999EA40D5394AA004E77CC /* turntablePitchCode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = turntablePitchCode.c; sourceTree = "<group>"; };
+		E2999EA50D5394AA004E77CC /* UIGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGLView.h; sourceTree = "<group>"; };
+		E2999EA60D5394AA004E77CC /* UIGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGLView.m; sourceTree = "<group>"; };
+		E2999EA70D5394D2004E77CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		E2999EA80D5394D2004E77CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = resources/icon.png; sourceTree = "<group>"; };
+		E2999EAA0D5394FB004E77CC /* GLDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDrawer.m; sourceTree = "<group>"; };
+		E2999EAB0D5394FB004E77CC /* GLDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDrawer.h; sourceTree = "<group>"; };
+		E2999EAC0D5394FB004E77CC /* CrossFaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossFaderView.m; sourceTree = "<group>"; };
+		E2999EAD0D5394FB004E77CC /* CrossFaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossFaderView.h; sourceTree = "<group>"; };
+		E2999EAE0D5394FB004E77CC /* CompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteView.m; sourceTree = "<group>"; };
+		E2999EAF0D5394FB004E77CC /* CompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteView.h; sourceTree = "<group>"; };
+		E2999EB00D5394FB004E77CC /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
+		E29E3CA60D3D711500617E16 /* LayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayerKit.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/LayerKit.framework"; sourceTree = "<absolute>"; };
+		E29E3CA80D3D712100617E16 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "<absolute>"; };
+		E29E3CAD0D3D714E00617E16 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E2B6BD510CEBA93000371094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/Foundation.framework"; sourceTree = "<absolute>"; };
+		E2B6BD530CEBA93C00371094 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/UIKit.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2999EAF0D5394FB004E77CC /* CompleteView.h */,
+				E2999EAE0D5394FB004E77CC /* CompleteView.m */,
+				E2999EAD0D5394FB004E77CC /* CrossFaderView.h */,
+				E2999EAC0D5394FB004E77CC /* CrossFaderView.m */,
+				E2999EAB0D5394FB004E77CC /* GLDrawer.h */,
+				E2999EAA0D5394FB004E77CC /* GLDrawer.m */,
+				E2999E940D5394AA004E77CC /* MasterAudioController.h */,
+				E2999E950D5394AA004E77CC /* MasterAudioController.m */,
+				E2999E960D5394AA004E77CC /* MultiTouchUIImageView.h */,
+				E2999E970D5394AA004E77CC /* MultiTouchUIImageView.m */,
+				E2999E980D5394AA004E77CC /* PartyApplication.h */,
+				E2999E990D5394AA004E77CC /* PartyApplication.m */,
+				E2999E9A0D5394AA004E77CC /* Renderer.h */,
+				E2999E9B0D5394AA004E77CC /* Renderer.m */,
+				E2999E9C0D5394AA004E77CC /* Stopwatch.h */,
+				E2999E9D0D5394AA004E77CC /* Stopwatch.m */,
+				E2999E9E0D5394AA004E77CC /* TurntableAudio.h */,
+				E2999E9F0D5394AA004E77CC /* TurntableAudio.m */,
+				E2999EA00D5394AA004E77CC /* TurntableController.h */,
+				E2999EA10D5394AA004E77CC /* TurntableController.m */,
+				E2999EA20D5394AA004E77CC /* TurntableGLView.h */,
+				E2999EA30D5394AA004E77CC /* TurntableGLView.m */,
+				E2999EA50D5394AA004E77CC /* UIGLView.h */,
+				E2999EA60D5394AA004E77CC /* UIGLView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				E29E3CAD0D3D714E00617E16 /* Makefile */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				E2999EC60D539864004E77CC /* Other Code */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Motion;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2999EA70D5394D2004E77CC /* Info.plist */,
+				E2999EA80D5394D2004E77CC /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2999EB00D5394FB004E77CC /* AudioQueue.h */,
+				E29E3CA80D3D712100617E16 /* CoreFoundation.framework */,
+				E29E3CA60D3D711500617E16 /* LayerKit.framework */,
+				E2B6BD530CEBA93C00371094 /* UIKit.framework */,
+				E2B6BD510CEBA93000371094 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2999EC60D539864004E77CC /* Other Code */ = {
+			isa = PBXGroup;
+			children = (
+				E2999E930D5394AA004E77CC /* main.m */,
+				E2999EA40D5394AA004E77CC /* turntablePitchCode.c */,
+			);
+			name = "Other Code";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D92591D10C6B42C700BBDBBC /* iDJ */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D92591D40C6B42CE00BBDBBC /* Build configuration list for PBXLegacyTarget "iDJ" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = iDJ;
+			passBuildSettingsInEnvironment = 1;
+			productName = Motion;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iDJ" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Motion */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D92591D10C6B42C700BBDBBC /* iDJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm;
+				CC = "/usr/local/iphonedev/bin/arm-apple-darwin-cc";
+				CXX = "/usr/local/iphonedev/bin/arm-apple-darwin-cc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD = "/usr/local/iphonedev/bin/arm-apple-darwin-cc";
+				PREBINDING = NO;
+				SDKROOT = "/usr/local/arm-apple-darwin";
+				SHARED_PRECOMPS_DIR = "/Library/Caches/com.apple.Xcode.iPhone.$(UID)/SharedPrecompiledHeaders";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm;
+				CC = "/usr/local/bin/arm-apple-darwin-gcc";
+				CXX = "/usr/local/bin/arm-apple-darwin-gcc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD = "/usr/local/bin/arm-apple-darwin-gcc";
+				PREBINDING = NO;
+				SDKROOT = "/usr/local/arm-apple-darwin";
+				SHARED_PRECOMPS_DIR = "/Library/Caches/com.apple.Xcode.iPhone.$(UID)/SharedPrecompiledHeaders";
+			};
+			name = Release;
+		};
+		D92591D50C6B42CE00BBDBBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Motion;
+			};
+			name = Debug;
+		};
+		D92591D60C6B42CE00BBDBBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Motion;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92591D40C6B42CE00BBDBBC /* Build configuration list for PBXLegacyTarget "iDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92591D50C6B42CE00BBDBBC /* Debug */,
+				D92591D60C6B42CE00BBDBBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

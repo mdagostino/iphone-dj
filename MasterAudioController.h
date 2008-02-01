@@ -7,7 +7,12 @@
  *
  */
 
+
+// This #define is needed to get AudioQueue.h to work
+#define AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER
+
 #import "TurntableAudio.h"
+
 #import "AudioQueue.h"
 
 #include <string.h>

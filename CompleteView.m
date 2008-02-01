@@ -304,7 +304,10 @@ static GLfloat rectangle[] = {
 - (CGPoint)getFinger2Press:(GSEvent *)event {
 	
 	// check for EVERY OCNCIEBALABLRB TYPE OF EVENT!!!!!#^&!%^%!@ ***
-	CGPoint loc =  GSEventGetLocationInWindow(event);
+	CGRect tapRect = GSEventGetLocationInWindow(event);
+	CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];//[self getFinger1Press:event];
+	// CGPoint loc =  GSEventGetLocationInWindow(event);
+	
 	CGPoint InnerMostPathPos  = GSEventGetInnerMostPathPosition(event);
 
         //   p2   blue(loc)   green(innermostpath) 
@@ -328,37 +331,39 @@ static GLfloat rectangle[] = {
 - (void)echoScreenPress:(GSEvent *)event 
 {
 
-        CGPoint loc =  GSEventGetLocationInWindow(event);
-
-        // check for EVERY OCNCIEBALABLRB TYPE OF EVENT!!!!!#^&!%^%!@ ***
-        int IsChording = GSEventIsChordingHandEvent(event);
-        int ClickCount = GSEventGetClickCount(event);
-        float DeltaX = GSEventGetDeltaX(event); 
-        float DeltaY = GSEventGetDeltaY(event); 
-        CGPoint InnerMostPathPos  = GSEventGetInnerMostPathPosition(event);
-        CGPoint OuterMostPathPos  = GSEventGetOuterMostPathPosition(event);
-        unsigned int EventSubType = GSEventGetSubType(event);
-        unsigned int EventType    = GSEventGetType(event);
-
-//        printf("%d %d  %.3f %.3f ",
-//               IsChording,ClickCount,
-//               DeltaX,DeltaY);
-//        
-//        printf("(%.3f, %.3f) ",
-//               InnerMostPathPos.x,
-//               InnerMostPathPos.y);
-//
-//        printf("%d %d ",EventSubType,EventType);
-//
-//        //CGPoint origin = rect.origin;
-//        //CGSize  size   = rect.size;
-//
-//        // print debug info
-//        printf("org(x,y) %3.5f %3.5f",
-//               loc.x,loc.y);
-//        printf("\n");
-
-        return;
+	CGRect tapRect = GSEventGetLocationInWindow(event);
+	CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];
+	//CGPoint loc =  GSEventGetLocationInWindow(event);
+	
+	// check for EVERY OCNCIEBALABLRB TYPE OF EVENT!!!!!#^&!%^%!@ ***
+	int IsChording = GSEventIsChordingHandEvent(event);
+	int ClickCount = GSEventGetClickCount(event);
+	float DeltaX = GSEventGetDeltaX(event); 
+	float DeltaY = GSEventGetDeltaY(event); 
+	CGPoint InnerMostPathPos  = GSEventGetInnerMostPathPosition(event);
+	CGPoint OuterMostPathPos  = GSEventGetOuterMostPathPosition(event);
+	unsigned int EventSubType = GSEventGetSubType(event);
+	unsigned int EventType    = GSEventGetType(event);
+	
+	//        printf("%d %d  %.3f %.3f ",
+	//               IsChording,ClickCount,
+	//               DeltaX,DeltaY);
+	//        
+	//        printf("(%.3f, %.3f) ",
+	//               InnerMostPathPos.x,
+	//               InnerMostPathPos.y);
+	//
+	//        printf("%d %d ",EventSubType,EventType);
+	//
+	//        //CGPoint origin = rect.origin;
+	//        //CGSize  size   = rect.size;
+	//
+	//        // print debug info
+	//        printf("org(x,y) %3.5f %3.5f",
+	//               loc.x,loc.y);
+	//        printf("\n");
+	
+	return;
 }
 
 - (void)mouseDown:(GSEvent *)event 
@@ -508,7 +513,9 @@ inline float sq(float f1)
 	NSLog(@"gestureEnded");
 
 	// p is the remaining finger
-	CGPoint p = GSEventGetLocationInWindow(event);//[self getFinger1Press:event];
+	CGRect tapRect = GSEventGetLocationInWindow(event);
+	CGPoint p = [self convertPoint:tapRect.origin fromView:nil];
+	//CGPoint p = GSEventGetLocationInWindow(event);//[self getFinger1Press:event];
 
 	float distP0 = sq(p.x - lastPoint[0].x) + sq(p.y - lastPoint[0].y);
 	float distP1 = sq(p.x - lastPoint[1].x) + sq(p.y - lastPoint[1].y);
