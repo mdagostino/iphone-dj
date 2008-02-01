@@ -1,3 +1,13 @@
+#
+# iDJ Makefile
+#
+# Usage: make (build project, results end up in build/Release/iDJ.app)
+#        make transfer (build and copy entire .app to iPhone via scp)
+#        make transferq (build and copy the iDJ application only iPhone via scp - quicker)
+#        make test (log on to your iPhone for testing)
+#        make clean (remove build files)
+#
+
 #---------- Project Settings ----------
 
 # Project Settings
