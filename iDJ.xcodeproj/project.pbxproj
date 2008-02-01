@@ -41,37 +41,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E2999EAF0D5394FB004E77CC /* CompleteView.h */,
-				E2999EAE0D5394FB004E77CC /* CompleteView.m */,
-				E2999EAD0D5394FB004E77CC /* CrossFaderView.h */,
-				E2999EAC0D5394FB004E77CC /* CrossFaderView.m */,
-				E2999EAB0D5394FB004E77CC /* GLDrawer.h */,
-				E2999EAA0D5394FB004E77CC /* GLDrawer.m */,
-				E2999E940D5394AA004E77CC /* MasterAudioController.h */,
-				E2999E950D5394AA004E77CC /* MasterAudioController.m */,
-				E2999E960D5394AA004E77CC /* MultiTouchUIImageView.h */,
-				E2999E970D5394AA004E77CC /* MultiTouchUIImageView.m */,
-				E2999E980D5394AA004E77CC /* PartyApplication.h */,
-				E2999E990D5394AA004E77CC /* PartyApplication.m */,
-				E2999E9A0D5394AA004E77CC /* Renderer.h */,
-				E2999E9B0D5394AA004E77CC /* Renderer.m */,
-				E2999E9C0D5394AA004E77CC /* Stopwatch.h */,
-				E2999E9D0D5394AA004E77CC /* Stopwatch.m */,
-				E2999E9E0D5394AA004E77CC /* TurntableAudio.h */,
-				E2999E9F0D5394AA004E77CC /* TurntableAudio.m */,
-				E2999EA00D5394AA004E77CC /* TurntableController.h */,
-				E2999EA10D5394AA004E77CC /* TurntableController.m */,
-				E2999EA20D5394AA004E77CC /* TurntableGLView.h */,
-				E2999EA30D5394AA004E77CC /* TurntableGLView.m */,
-				E2999EA50D5394AA004E77CC /* UIGLView.h */,
-				E2999EA60D5394AA004E77CC /* UIGLView.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				E29E3CAD0D3D714E00617E16 /* Makefile */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				E2999EC60D539864004E77CC /* Other Code */,
+				E2999EC60D539864004E77CC /* Core Code */,
+				E299A0B50D53E60A004E77CC /* User Interface Code */,
+				E299A0B60D53E618004E77CC /* Sound Code */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -110,13 +80,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E2999EC60D539864004E77CC /* Other Code */ = {
+		E2999EC60D539864004E77CC /* Core Code */ = {
 			isa = PBXGroup;
 			children = (
 				E2999E930D5394AA004E77CC /* main.m */,
+				E2999E980D5394AA004E77CC /* PartyApplication.h */,
+				E2999E990D5394AA004E77CC /* PartyApplication.m */,
+			);
+			name = "Core Code";
+			sourceTree = "<group>";
+		};
+		E299A0B50D53E60A004E77CC /* User Interface Code */ = {
+			isa = PBXGroup;
+			children = (
+				E2999EAF0D5394FB004E77CC /* CompleteView.h */,
+				E2999EAE0D5394FB004E77CC /* CompleteView.m */,
+				E2999EAD0D5394FB004E77CC /* CrossFaderView.h */,
+				E2999EAC0D5394FB004E77CC /* CrossFaderView.m */,
+				E2999E960D5394AA004E77CC /* MultiTouchUIImageView.h */,
+				E2999E970D5394AA004E77CC /* MultiTouchUIImageView.m */,
+				E2999EA00D5394AA004E77CC /* TurntableController.h */,
+				E2999EA10D5394AA004E77CC /* TurntableController.m */,
+				E2999EA20D5394AA004E77CC /* TurntableGLView.h */,
+				E2999EA30D5394AA004E77CC /* TurntableGLView.m */,
+				E2999EA50D5394AA004E77CC /* UIGLView.h */,
+				E2999EA60D5394AA004E77CC /* UIGLView.m */,
+				E2999EAB0D5394FB004E77CC /* GLDrawer.h */,
+				E2999EAA0D5394FB004E77CC /* GLDrawer.m */,
+				E2999E9A0D5394AA004E77CC /* Renderer.h */,
+				E2999E9B0D5394AA004E77CC /* Renderer.m */,
+				E2999E9C0D5394AA004E77CC /* Stopwatch.h */,
+				E2999E9D0D5394AA004E77CC /* Stopwatch.m */,
+			);
+			name = "User Interface Code";
+			sourceTree = "<group>";
+		};
+		E299A0B60D53E618004E77CC /* Sound Code */ = {
+			isa = PBXGroup;
+			children = (
+				E2999E940D5394AA004E77CC /* MasterAudioController.h */,
+				E2999E950D5394AA004E77CC /* MasterAudioController.m */,
+				E2999E9E0D5394AA004E77CC /* TurntableAudio.h */,
+				E2999E9F0D5394AA004E77CC /* TurntableAudio.m */,
 				E2999EA40D5394AA004E77CC /* turntablePitchCode.c */,
 			);
-			name = "Other Code";
+			name = "Sound Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

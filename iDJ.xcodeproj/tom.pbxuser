@@ -100,6 +100,9 @@
 		perUserProjectItems = {
 			E299A0A40D53DEA8004E77CC /* PBXBookmark */ = E299A0A40D53DEA8004E77CC /* PBXBookmark */;
 			E299A0B30D53E391004E77CC /* PBXTextBookmark */ = E299A0B30D53E391004E77CC /* PBXTextBookmark */;
+			E299A0B70D53E64E004E77CC /* PBXTextBookmark */ = E299A0B70D53E64E004E77CC /* PBXTextBookmark */;
+			E299A0BA0D53E697004E77CC /* PBXTextBookmark */ = E299A0BA0D53E697004E77CC /* PBXTextBookmark */;
+			E299A0BB0D53E697004E77CC /* PBXTextBookmark */ = E299A0BB0D53E697004E77CC /* PBXTextBookmark */;
 		};
 		sourceControlManager = E2C98D360CE3569E00B8CB43 /* Source Control */;
 		userBookmarkGroup = E29E3C850D3D701F00617E16 /* PBXBookmarkGroup */;
@@ -190,9 +193,9 @@
 	};
 	E2999E9E0D5394AA004E77CC /* TurntableAudio.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {842, 728}}";
+			sepNavIntBoundsRect = "{{0, 0}, {842, 784}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1072}";
+			sepNavVisRange = "{469, 894}";
 			sepNavWindowFrame = "{{84, 62}, {867, 648}}";
 		};
 	};
@@ -219,6 +222,14 @@
 			sepNavWindowFrame = "{{61, 142}, {665, 589}}";
 		};
 	};
+	E2999EAD0D5394FB004E77CC /* CrossFaderView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {808, 520}}";
+			sepNavSelRange = "{249, 15}";
+			sepNavVisRange = "{0, 278}";
+			sepNavWindowFrame = "{{38, 104}, {867, 648}}";
+		};
+	};
 	E2999EAE0D5394FB004E77CC /* CompleteView.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {920, 8624}}";
@@ -230,9 +241,9 @@
 	E2999EAF0D5394FB004E77CC /* CompleteView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {808, 826}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavSelRange = "{944, 8}";
 			sepNavVisRange = "{0, 1123}";
-			sepNavWindowFrame = "{{84, 62}, {867, 648}}";
+			sepNavWindowFrame = "{{448, 61}, {867, 648}}";
 		};
 	};
 	E2999EB00D5394FB004E77CC /* AudioQueue.h */ = {
@@ -253,6 +264,36 @@
 		name = "CompleteView.h: 1";
 		rLen = 0;
 		rLoc = 0;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	E299A0B70D53E64E004E77CC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999EAF0D5394FB004E77CC /* CompleteView.h */;
+		name = "CompleteView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	E299A0BA0D53E697004E77CC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999EAF0D5394FB004E77CC /* CompleteView.h */;
+		name = "CompleteView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
+	E299A0BB0D53E697004E77CC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999EAF0D5394FB004E77CC /* CompleteView.h */;
+		name = "CompleteView.h: 30";
+		rLen = 8;
+		rLoc = 944;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 0;
