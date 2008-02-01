@@ -306,7 +306,7 @@
 							<real>300</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>202 229 879 543 0 0 1280 778 </string>
+						<string>462 76 879 543 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -343,7 +343,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {557, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>202 229 879 543 0 0 1280 778 </string>
+								<string>462 76 879 543 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -363,7 +363,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {557, 497}}</string>
 								<key>RubberWindowFrame</key>
-								<string>202 229 879 543 0 0 1280 778 </string>
+								<string>462 76 879 543 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -387,9 +387,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E2999FE60D53CC98004E77CC</string>
+				<string>E299A09E0D53DDB2004E77CC</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E2999FE70D53CC98004E77CC</string>
+				<string>E299A09F0D53DDB2004E77CC</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -521,11 +521,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E2999FE80D53CC98004E77CC</string>
-		<string>/Users/tom/Documents/Development/iDJ/src4/trunk/iDJ.xcodeproj</string>
+		<string>E2B6BD570CEBA9A300371094</string>
+		<string>/Users/tom/Documents/Development/iDJ/src/iDJ.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>202 229 879 543 0 0 1280 778 </string>
+	<string>462 76 879 543 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -541,14 +541,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CompleteView.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -604,7 +602,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E2B6BD570CEBA9A300371094</string>
-				<string>E2999EF20D53B038004E77CC</string>
+				<string>E299A0A00D53DDB2004E77CC</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

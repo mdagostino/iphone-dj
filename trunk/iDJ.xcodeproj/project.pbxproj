@@ -36,11 +36,7 @@
 		E2999EAE0D5394FB004E77CC /* CompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteView.m; sourceTree = "<group>"; };
 		E2999EAF0D5394FB004E77CC /* CompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteView.h; sourceTree = "<group>"; };
 		E2999EB00D5394FB004E77CC /* AudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueue.h; sourceTree = "<group>"; };
-		E29E3CA60D3D711500617E16 /* LayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayerKit.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/LayerKit.framework"; sourceTree = "<absolute>"; };
-		E29E3CA80D3D712100617E16 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "<absolute>"; };
 		E29E3CAD0D3D714E00617E16 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		E2B6BD510CEBA93000371094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/Foundation.framework"; sourceTree = "<absolute>"; };
-		E2B6BD530CEBA93C00371094 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = "/usr/local/share/iphone-filesystem/System/Library/Frameworks/UIKit.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -108,10 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				E2999EB00D5394FB004E77CC /* AudioQueue.h */,
-				E29E3CA80D3D712100617E16 /* CoreFoundation.framework */,
-				E29E3CA60D3D711500617E16 /* LayerKit.framework */,
-				E2B6BD530CEBA93C00371094 /* UIKit.framework */,
-				E2B6BD510CEBA93000371094 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
