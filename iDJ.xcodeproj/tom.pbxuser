@@ -97,6 +97,10 @@
 			PBXPerProjectTemplateStateSaveDate = 223600028;
 			PBXWorkspaceStateSaveDate = 223600028;
 		};
+		perUserProjectItems = {
+			E299A0A40D53DEA8004E77CC /* PBXBookmark */ = E299A0A40D53DEA8004E77CC /* PBXBookmark */;
+			E299A0B30D53E391004E77CC /* PBXTextBookmark */ = E299A0B30D53E391004E77CC /* PBXTextBookmark */;
+		};
 		sourceControlManager = E2C98D360CE3569E00B8CB43 /* Source Control */;
 		userBookmarkGroup = E29E3C850D3D701F00617E16 /* PBXBookmarkGroup */;
 		userBuildSettings = {
@@ -239,6 +243,20 @@
 			sepNavWindowFrame = "{{15, 125}, {867, 648}}";
 		};
 	};
+	E299A0A40D53DEA8004E77CC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E2999EAF0D5394FB004E77CC /* CompleteView.h */;
+	};
+	E299A0B30D53E391004E77CC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999EAF0D5394FB004E77CC /* CompleteView.h */;
+		name = "CompleteView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 0;
+	};
 	E29E3C850D3D701F00617E16 /* PBXBookmarkGroup */ = {
 		isa = PBXBookmarkGroup;
 		children = (
@@ -248,9 +266,9 @@
 	};
 	E29E3CAD0D3D714E00617E16 /* Makefile */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {657, 1470}}";
-			sepNavSelRange = "{995, 0}";
-			sepNavVisRange = "{346, 942}";
+			sepNavIntBoundsRect = "{{0, 0}, {657, 1540}}";
+			sepNavSelRange = "{177, 0}";
+			sepNavVisRange = "{0, 895}";
 			sepNavWindowFrame = "{{569, 100}, {716, 597}}";
 		};
 	};
