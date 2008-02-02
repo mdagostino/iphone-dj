@@ -15,3 +15,6 @@
 == Extra features (P2) ==
   * Equalizer.
   * "English Spin"
+
+
+For more details, see [iDJUsersGuide].
