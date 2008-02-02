@@ -1,7 +1,14 @@
 #summary iDJ control- and interface layout
 #labels Phase-Requirements,Phase-Implementation
 
-Current suggestion:
+== User Interface Classes (suggestion) ==
+
+A suggestion for refactoring of UI classes:
+
+http://iphone-dj.googlecode.com/svn/trunk/design/iDJ_User_Interface_Classes.gif
+
+
+== Current suggestion: ==
 
 http://iphone-dj.googlecode.com/svn/trunk/graphics/Turntable%20View/idj_layout.png
 
