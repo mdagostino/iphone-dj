@@ -3,6 +3,6 @@
 
 Current suggestion:
 
-http://iphone-dj.googlecode.com/svn/trunk/gfx/png/idj_layout.png
+http://iphone-dj.googlecode.com/svn/trunk/graphics/Turntable%20View/idj_layout.png
 
 The pitch/speed control grows when touched.
