@@ -208,7 +208,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				PRODUCT_NAME = Motion;
+				PRODUCT_NAME = iDJ;
 				ZERO_LINK = NO;
 			};
 			name = Release;

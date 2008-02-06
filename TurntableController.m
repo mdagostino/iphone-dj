@@ -11,14 +11,14 @@
 
 @implementation TurntableController
 
-- (id) init 
+- (id) initWithAudioStruct:(TurntableAudioStruct *) audioStruct
 {
 	if ( self = [super init] )
 	{
+		audioStructPtr = audioStruct;
+		
 		NSLog(@"doing view");
 		view = [[TurntableGLView alloc] initWithController:self];
-		NSLog(@"doing audio");
-		//audio = [[TurntableAudio alloc] init];
 		
 		NSLog(@"initing vars");
 		playingForwards = YES;
@@ -32,7 +32,6 @@
 		
 		watch = [[Stopwatch alloc] initWithName:@"turntableControllerUpdateFreq"];
 		[watch startFPS];
-
 	}
 	
 	return self;
@@ -45,7 +44,7 @@
 
 - (TurntableAudioStruct *) audio
 {
-	return audio;
+	return audioStructPtr;
 }
 
 

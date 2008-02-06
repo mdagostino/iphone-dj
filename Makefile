@@ -41,7 +41,7 @@ FRAMEWORKS_LIST=-framework AppSupport \
 				-framework UIKit
 
 # iPhone Device Settings
-IPHONE_ADDRESS=18.85.18.231
+IPHONE_ADDRESS=hacked
 IPHONE_APPS_PATH=/Applications/
 
 # iPhone SDK Settings
@@ -54,7 +54,7 @@ LIBMADFLAGS = -L$(MADPLAY) -L$(MADPLAY)/.libs/libmad.a $(MADPLAY)/.libs/libid3ta
 
 # Compiler Settings
 CC=/usr/local/bin/arm-apple-darwin-gcc
-CPPFLAGS = -I$(MADPLAY)
+CPPFLAGS = -I$(MADPLAY) -DAARON_TOOLCHAIN -std=c99
 LD=$(CC)
 LDFLAGS=-mmacosx-version-min=10.1 $(LIBMADFLAGS) -lobjc $(FRAMEWORKS_LIST)
 
@@ -96,14 +96,17 @@ $(CONFIGURATION_TEMP_DIR)/%.o: $(SOURCE_ROOT)/%.m
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
-transfer:
+transfer: all
 	scp -r $(BUNDLE_PATH) root@$(IPHONE_ADDRESS):$(IPHONE_APPS_PATH)
 
-transferq:
+transferq: all
 	scp -r $(BUNDLE_PATH)/$(EXECUTABLE_NAME) root@$(IPHONE_ADDRESS):$(IPHONE_APPS_PATH)$(BUNDLE_NAME)/
 
-test:
-	ssh root@$(IPHONE_ADDRESS)
+test: transferq
+	ssh -t root@$(IPHONE_ADDRESS) $(IPHONE_APPS_PATH)$(BUNDLE_NAME)/$(EXECUTABLE_NAME)
+
+testnow:
+	ssh -t root@$(IPHONE_ADDRESS) $(IPHONE_APPS_PATH)$(BUNDLE_NAME)/$(EXECUTABLE_NAME)
 
 clean:
 	rm -r ./build

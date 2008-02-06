@@ -16,7 +16,7 @@
 {
 	TurntableGLView *view;
 //	TurntableAudio *audio;
-	TurntableAudioStruct *audio;
+	TurntableAudioStruct *audioStructPtr;
 	BOOL playingForwards;
 	float rate;
 	unsigned int position;
@@ -26,6 +26,7 @@
 	BOOL ticking;
 }
 
+- (id) initWithAudioStruct:(TurntableAudioStruct *) audioStructPtr;
 - (TurntableGLView *) view;
 - (TurntableAudioStruct *) audio;
 - (void) playBackwards;
