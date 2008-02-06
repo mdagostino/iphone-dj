@@ -1,6 +1,4 @@
 #import "PartyApplication.h"
-#import <LayerKit/LayerKit.h>
-#import <UIKit/UITouchDiagnosticsLayer.h>
 
 @implementation PartyApplication
 
@@ -76,11 +74,22 @@ static PartyApplication *_sharedInstance;
 //	frame.size.height -= [UIApplication statusBarRect].size.height;
 
 //	rect.origin.x = rect.origin.y = 0;
+
+
+
 	
-	NSLog(@"allocating turntables, doing left");
-	leftTurntable = [[TurntableController alloc] init];
+
+
+	
+	NSLog(@"allocating turntables, allocating their audio");
+	//TurntableAudioStruct turntables[MAX_TURNTABLES];
+	numTurntables = 2;
+	initAudioTurntables(numTurntables);
+	
+	NSLog(@"doing left");
+	leftTurntable = [[TurntableController alloc] initWithAudioStruct:(&turntables[0]) ];
 	NSLog(@"doing righT");
-	rightTurntable = [[TurntableController alloc] init];
+	rightTurntable = [[TurntableController alloc] initWithAudioStruct:(&turntables[1]) ];
 	
 	NSLog(@"doing dynamic array");
 	tables = [[NSMutableArray arrayWithObjects: leftTurntable, rightTurntable, nil] retain];

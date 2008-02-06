@@ -304,9 +304,13 @@ static GLfloat rectangle[] = {
 - (CGPoint)getFinger2Press:(GSEvent *)event {
 	
 	// check for EVERY OCNCIEBALABLRB TYPE OF EVENT!!!!!#^&!%^%!@ ***
-	CGRect tapRect = GSEventGetLocationInWindow(event);
-	CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];//[self getFinger1Press:event];
-	// CGPoint loc =  GSEventGetLocationInWindow(event);
+	
+	#if AARON_TOOLCHAIN
+		CGPoint loc =  GSEventGetLocationInWindow(event);
+	#else
+		CGRect tapRect = GSEventGetLocationInWindow(event);
+		CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];//[self getFinger1Press:event];
+	#endif
 	
 	CGPoint InnerMostPathPos  = GSEventGetInnerMostPathPosition(event);
 
@@ -330,10 +334,13 @@ static GLfloat rectangle[] = {
 
 - (void)echoScreenPress:(GSEvent *)event 
 {
-
-	CGRect tapRect = GSEventGetLocationInWindow(event);
-	CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];
-	//CGPoint loc =  GSEventGetLocationInWindow(event);
+	#if AARON_TOOLCHAIN
+		CGPoint loc =  GSEventGetLocationInWindow(event);
+	#else
+		CGRect tapRect = GSEventGetLocationInWindow(event);
+		CGPoint loc = [self convertPoint:tapRect.origin fromView:nil];
+	#endif
+	
 	
 	// check for EVERY OCNCIEBALABLRB TYPE OF EVENT!!!!!#^&!%^%!@ ***
 	int IsChording = GSEventIsChordingHandEvent(event);
@@ -513,9 +520,12 @@ inline float sq(float f1)
 	NSLog(@"gestureEnded");
 
 	// p is the remaining finger
-	CGRect tapRect = GSEventGetLocationInWindow(event);
-	CGPoint p = [self convertPoint:tapRect.origin fromView:nil];
-	//CGPoint p = GSEventGetLocationInWindow(event);//[self getFinger1Press:event];
+	#if AARON_TOOLCHAIN
+		CGPoint p = GSEventGetLocationInWindow(event);//[self getFinger1Press:event];
+	#else
+		CGRect tapRect = GSEventGetLocationInWindow(event);
+		CGPoint p = [self convertPoint:tapRect.origin fromView:nil];
+	#endif
 
 	float distP0 = sq(p.x - lastPoint[0].x) + sq(p.y - lastPoint[0].y);
 	float distP1 = sq(p.x - lastPoint[1].x) + sq(p.y - lastPoint[1].y);

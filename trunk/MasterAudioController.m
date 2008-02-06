@@ -32,7 +32,29 @@ static int *waveBuffer = NULL;//valloc((1152 * 4) * 2 * 20 * 2);//[WAVE_BUFFER_S
 static int waveBufferWriteIdxEnd;
 
 
-unsigned char data[MAX_NSAMPLES * 4 * 2];  // N samples * sizeof(int) * 2 ch. stereo
+static unsigned char data[MAX_NSAMPLES * 4 * 2];  // N samples * sizeof(int) * 2 ch. stereo
+
+
+
+
+// VOLUME/CUE RELATED VARIABLES
+static BOOL outputOnlyMains = FALSE;
+static BOOL cueIndependentVolume = FALSE;
+static float totalMainsVolume = 1.0;
+static float totalCueVolume = 1.0;
+
+// VOLUME/CUE RELATED FUNCTIONS.  ANYTHING CAN CALL THESE TO MANIPULATE VOLUME LEVELS
+// BECAUSE EVERYTHING IS DONE ON THE FLY, WE ONLY NEED TO MANIPULATE A VARIABLE FOR THE NEXT MIX TO GO OUT TO THE SOUND CARD
+void setCueEnabledMode() { outputOnlyMains = FALSE; }
+void setMainsOnlyMode() { outputOnlyMains = TRUE; }
+void setCueIndependentMix() { cueIndependentVolume = TRUE; }
+void setCueMainsMix() { cueIndependentVolume = FALSE; }
+
+// VOLUME RANGE IS 0-1
+void setMainsVolume(float volume) { totalMainsVolume = volume; }
+void setTotalCueVolume(float volume) { totalCueVolume = volume; }
+
+
 
 
 

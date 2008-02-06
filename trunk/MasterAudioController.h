@@ -44,3 +44,15 @@ typedef struct AQCallbackStruct {
 void initAudioController();
 void finishAudioController();
 
+
+// FOR SPLITTING/TOGGLING CUE
+void setCueEnabledMode();
+void setCueIndependentMix();
+void setCueMainsMix();
+void setMainsOnlyMode();
+
+// VOLUME RANGE IS 0-1
+void setMainsVolume(float volume);
+
+// VOLUME RANGE IS 0-1
+void setTotalCueVolume(float volume);

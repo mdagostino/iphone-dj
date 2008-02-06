@@ -49,7 +49,10 @@ typedef struct TurntableStructType
 {
 	BufferRingStruct mp3DecodeBuffer;
 	BufferRingStruct outBuffer;
+	float mainsVolume;
+	float cueVolume;
 } TurntableAudioStruct;
 
-
+extern int numTurntables;
+extern TurntableAudioStruct turntables[];
 void initAudioTurntables();
