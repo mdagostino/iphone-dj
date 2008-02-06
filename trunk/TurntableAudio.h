@@ -52,4 +52,4 @@ typedef struct TurntableStructType
 } TurntableAudioStruct;
 
 
-
+void initAudioTurntables();
