@@ -41,7 +41,7 @@ TurntableAudioStruct getNewTurntable()
 	return turntable;
 }
 
-void initTurntables()
+void initAudioTurntables()
 {
 	turntables[0] = getNewTurntable();
 	turntables[1] = getNewTurntable();
