@@ -47,14 +47,14 @@ void setupAudioChain()
 
 	AudioNoiseSource *noiseGen = [[AudioNoiseSource alloc] init];
 	AudioWhiteNoiseSource *wnoiseGen = [[AudioWhiteNoiseSource alloc] init];
-	AudioSineWaveSource *sinGen = [[AudioSineWaveSource alloc] initWithFrequency:500];
-	AudioSineWaveSource *sinGenB = [[AudioSineWaveSource alloc] initWithFrequency:1500];
+	AudioSineWaveSource *sinGen = [[AudioSineWaveSource alloc] initWithFrequency:1209];
+	AudioSineWaveSource *sinGenB = [[AudioSineWaveSource alloc] initWithFrequency:697];
 
 	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:sinGen andSourceB:sinGenB];
 
 //	[aqSink setSource:noiseGen];
 //	[aqSink setSource:wnoiseGen];
-//	[aqSink setSource:sinGen];
+//	[aqSink setSource:sinGenB];
 	[aqSink setSource:composite];
 
 	[noiseGen release];

@@ -36,7 +36,6 @@
 {
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
-		srandom(time(0));
 		NSLog(@"allocating AudioCompositor buffer");
 		if ( buffer != NULL )
 			free (buffer);
@@ -55,17 +54,20 @@
 	AUDIO_SHORTS_PTR aAudio = [sourceA getAudio:msec];
 	AUDIO_SHORTS_PTR bAudio = [sourceB getAudio:msec];
 	
-	// mix them, thx to http://www.vttoth.com/digimix.htm
+	// mix them preventing cliping
 	int numShorts = bufferSizeInBytes >> 1; // bytes to shorts
 
 	// TODO: take into account xfader using a sigmoidal function like tanh
 	for ( int i = 0; i < numShorts; i++ )
 	{
-		int z1 = ((int)aAudio[i] * (int)bAudio[i]) / (1 << 15);
-		if ( aAudio[i] < 0 && bAudio[i] < 0 )
-			buffer[i] = (short) z1;
+		int upsampled = (int) aAudio[i] + (int) bAudio[i];
+
+		if ( upsampled > SIGNED_SHORT_MAX_POS )
+			buffer[i] = SIGNED_SHORT_MAX_POS;
+		else if ( upsampled < SIGNED_SHORT_MAX_NEG )
+			buffer[i] = SIGNED_SHORT_MAX_NEG;
 		else
-			buffer[i] = (short) ( 2 * ((int)aAudio[i] + (int)bAudio[i]) - z1 - (1 << 16));
+			buffer[i] = upsampled;
 	}
 	
 	return buffer;

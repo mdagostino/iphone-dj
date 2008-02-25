@@ -334,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>938710630D727A0C008D45ED</string>
+										<string>938710860D7280F5008D45ED</string>
 										<key>history</key>
 										<array>
 											<string>937ADF450D5995C700EF38B1</string>
@@ -351,10 +351,7 @@
 											<string>93870F250D723B65008D45ED</string>
 											<string>93870F700D726F4D008D45ED</string>
 											<string>93870F710D726F4D008D45ED</string>
-											<string>93870F730D726F4D008D45ED</string>
 											<string>93870F750D726F4D008D45ED</string>
-											<string>93870F790D726F4D008D45ED</string>
-											<string>93870F7A0D726F4D008D45ED</string>
 											<string>93870F7B0D726F4D008D45ED</string>
 											<string>93870F7C0D726F4D008D45ED</string>
 											<string>93870F800D726F4D008D45ED</string>
@@ -365,13 +362,16 @@
 											<string>9387103F0D727A0C008D45ED</string>
 											<string>938710400D727A0C008D45ED</string>
 											<string>938710410D727A0C008D45ED</string>
-											<string>938710420D727A0C008D45ED</string>
 											<string>938710430D727A0C008D45ED</string>
 											<string>938710440D727A0C008D45ED</string>
 											<string>938710450D727A0C008D45ED</string>
 											<string>938710460D727A0C008D45ED</string>
-											<string>938710470D727A0C008D45ED</string>
-											<string>938710480D727A0C008D45ED</string>
+											<string>938710680D727EAE008D45ED</string>
+											<string>938710780D728023008D45ED</string>
+											<string>938710790D728023008D45ED</string>
+											<string>9387107A0D728023008D45ED</string>
+											<string>9387107B0D728023008D45ED</string>
+											<string>9387107C0D728023008D45ED</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -832,6 +832,19 @@
 											<string>938710600D727A0C008D45ED</string>
 											<string>938710610D727A0C008D45ED</string>
 											<string>938710620D727A0C008D45ED</string>
+											<string>9387106C0D727EAE008D45ED</string>
+											<string>9387106D0D727EAE008D45ED</string>
+											<string>9387106E0D727EAE008D45ED</string>
+											<string>9387106F0D727EAE008D45ED</string>
+											<string>938710700D727EAE008D45ED</string>
+											<string>938710710D727EAE008D45ED</string>
+											<string>9387107D0D728023008D45ED</string>
+											<string>9387107E0D728023008D45ED</string>
+											<string>9387107F0D728023008D45ED</string>
+											<string>938710800D728023008D45ED</string>
+											<string>938710810D728023008D45ED</string>
+											<string>938710820D728023008D45ED</string>
+											<string>938710830D728023008D45ED</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -1031,8 +1044,8 @@
 		<string>93870EEE0D723796008D45ED</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>937ADEA80D59701400EF38B1</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>937ADEA80D59701400EF38B1</string>
 		<string>/Users/aaron/iphonedev/iphone-dj/iDJ.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
