@@ -1,5 +1,5 @@
 //
-//  AudioSilenceSource.h
+//  AudioSineWaveSource.h
 //  iDJ
 //
 //  Created by Aaron Zinman on 2/24/08.
@@ -8,12 +8,19 @@
 
 #import "AudioHeaders.h"
 
-@interface AudioSilenceSource : NSObject <AudioSource>
+@interface AudioSineWaveSource : NSObject <AudioSource>
 {
 	AUDIO_SHORTS_PTR buffer;
 	int bufferSizeInMsec;
+	int bufferSizeInBytes;
+	double frequency;
+	double omega, b, y1, y2;
 }
 
+- (id) initWithFrequency:(double) freq;
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec;
 
 @end
+
+
+

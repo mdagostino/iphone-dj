@@ -18,6 +18,9 @@ SOURCE_LIST=main.m \
 		AudioQueueSink.m \
 		AudioNoiseSource.m \
 		AudioSilenceSource.m \
+		AudioSineWaveSource.m \
+		AudioWhiteNoiseSource.m \
+		AudioCompositor.m \
 		DSPRoutines.m \
 		AudioRoutines.c \
 		PartyApplication.m \

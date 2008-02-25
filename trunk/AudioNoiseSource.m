@@ -8,10 +8,19 @@
 
 #import "AudioNoiseSource.h"
 
-static AUDIO_SHORTS_PTR buffer = NULL;
-static int bufferSizeInMsec = 0;
-
 @implementation AudioNoiseSource
+
+- (id) init
+{
+	if ( self = [super init] )
+	{
+		buffer = NULL;
+		bufferSizeInMsec = 0;
+		bufferSizeInBytes = 0;
+	}
+	
+	return self;
+}
 
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec
 {
@@ -22,8 +31,8 @@ static int bufferSizeInMsec = 0;
 		if ( buffer != NULL )
 			free (buffer);
 		
-		int numBytes = framesToBytes(msecToFrames(msec));
-		buffer = (AUDIO_SHORTS_PTR)calloc(1, numBytes);
+		bufferSizeInBytes = framesToBytes(msecToFrames(msec));
+		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
 			NSLog(@"Couldn't allocate noisegen buffer");
@@ -31,8 +40,8 @@ static int bufferSizeInMsec = 0;
 		}
 		bufferSizeInMsec = msec;
 		
-		for ( int i = 0; i < (numBytes/WAVE_BYTES_PER_SAMPLE); i++ )
-			buffer[i] = (short)(random() & 0xFFFF);
+		for ( int i = 0; i < (bufferSizeInBytes/WAVE_BYTES_PER_SAMPLE); i++ )
+			buffer[i] = (short) random();
 	}
 	
 	return buffer;

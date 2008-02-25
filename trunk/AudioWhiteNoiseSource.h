@@ -1,5 +1,5 @@
 //
-//  AudioSilenceSource.h
+//  AudioWhiteNoiseSource.h
 //  iDJ
 //
 //  Created by Aaron Zinman on 2/24/08.
@@ -8,10 +8,12 @@
 
 #import "AudioHeaders.h"
 
-@interface AudioSilenceSource : NSObject <AudioSource>
+
+@interface AudioWhiteNoiseSource : NSObject <AudioSource>
 {
 	AUDIO_SHORTS_PTR buffer;
 	int bufferSizeInMsec;
+	int bufferSizeInBytes;
 }
 
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec;

@@ -22,4 +22,6 @@
 #import "AudioChainProtocol.h"
 #import "AudioQueueSink.h"
 #import "AudioNoiseSource.h"
+#import "AudioWhiteNoiseSource.h"
+#import "AudioSineWaveSource.h"
 #import "MasterAudioController.h"

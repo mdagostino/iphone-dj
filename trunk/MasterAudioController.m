@@ -44,9 +44,20 @@ static AudioQueueSink* aqSink;
 void setupAudioChain()
 {
 	aqSink = [[AudioQueueSink alloc] init];
+
 	AudioNoiseSource *noiseGen = [[AudioNoiseSource alloc] init];
-	[aqSink setSource:noiseGen];
+	AudioWhiteNoiseSource *wnoiseGen = [[AudioWhiteNoiseSource alloc] init];
+	AudioSineWaveSource *sinGen = [[AudioSineWaveSource alloc] initWithFrequency:500];
+
+//	[aqSink setSource:noiseGen];
+//	[aqSink setSource:wnoiseGen];
+	[aqSink setSource:sinGen];
+
 	[noiseGen release];
+	[wnoiseGen release];
+	[sinGen release];
+	
+	NSLog(@"setupAudioChain complete");
 }
 
 void startAudio()
