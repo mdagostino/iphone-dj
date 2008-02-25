@@ -33,7 +33,7 @@
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
 		srandom(time(0));
-		NSLog(@"allocating AudioSilenceSource buffer");
+		NSLog(@"allocating AudioSineWaveSource buffer");
 		if ( buffer != NULL )
 			free (buffer);
 		
@@ -42,7 +42,7 @@
 		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
-			NSLog(@"Couldn't allocate AudioSilenceSource buffer");
+			NSLog(@"Couldn't allocate AudioSineWaveSource buffer");
 			exit(1);
 		}
 	}

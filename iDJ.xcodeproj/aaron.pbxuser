@@ -838,6 +838,43 @@
 			9387102E0D72713B008D45ED /* PBXTextBookmark */ = 9387102E0D72713B008D45ED /* PBXTextBookmark */;
 			9387102F0D72713B008D45ED /* PBXTextBookmark */ = 9387102F0D72713B008D45ED /* PBXTextBookmark */;
 			938710300D72713B008D45ED /* PBXTextBookmark */ = 938710300D72713B008D45ED /* PBXTextBookmark */;
+			9387103F0D727A0C008D45ED /* PBXTextBookmark */ = 9387103F0D727A0C008D45ED /* PBXTextBookmark */;
+			938710400D727A0C008D45ED /* PBXTextBookmark */ = 938710400D727A0C008D45ED /* PBXTextBookmark */;
+			938710410D727A0C008D45ED /* PBXTextBookmark */ = 938710410D727A0C008D45ED /* PBXTextBookmark */;
+			938710420D727A0C008D45ED /* PBXTextBookmark */ = 938710420D727A0C008D45ED /* PBXTextBookmark */;
+			938710430D727A0C008D45ED /* PBXTextBookmark */ = 938710430D727A0C008D45ED /* PBXTextBookmark */;
+			938710440D727A0C008D45ED /* PBXTextBookmark */ = 938710440D727A0C008D45ED /* PBXTextBookmark */;
+			938710450D727A0C008D45ED /* PBXTextBookmark */ = 938710450D727A0C008D45ED /* PBXTextBookmark */;
+			938710460D727A0C008D45ED /* PBXTextBookmark */ = 938710460D727A0C008D45ED /* PBXTextBookmark */;
+			938710470D727A0C008D45ED /* PBXTextBookmark */ = 938710470D727A0C008D45ED /* PBXTextBookmark */;
+			938710480D727A0C008D45ED /* PBXTextBookmark */ = 938710480D727A0C008D45ED /* PBXTextBookmark */;
+			938710490D727A0C008D45ED /* PBXTextBookmark */ = 938710490D727A0C008D45ED /* PBXTextBookmark */;
+			9387104A0D727A0C008D45ED /* PBXTextBookmark */ = 9387104A0D727A0C008D45ED /* PBXTextBookmark */;
+			9387104B0D727A0C008D45ED /* PBXTextBookmark */ = 9387104B0D727A0C008D45ED /* PBXTextBookmark */;
+			9387104C0D727A0C008D45ED /* PBXTextBookmark */ = 9387104C0D727A0C008D45ED /* PBXTextBookmark */;
+			9387104D0D727A0C008D45ED /* PBXTextBookmark */ = 9387104D0D727A0C008D45ED /* PBXTextBookmark */;
+			9387104E0D727A0C008D45ED /* PBXTextBookmark */ = 9387104E0D727A0C008D45ED /* PBXTextBookmark */;
+			9387104F0D727A0C008D45ED /* PBXTextBookmark */ = 9387104F0D727A0C008D45ED /* PBXTextBookmark */;
+			938710500D727A0C008D45ED /* PBXTextBookmark */ = 938710500D727A0C008D45ED /* PBXTextBookmark */;
+			938710510D727A0C008D45ED /* PBXTextBookmark */ = 938710510D727A0C008D45ED /* PBXTextBookmark */;
+			938710520D727A0C008D45ED /* PBXTextBookmark */ = 938710520D727A0C008D45ED /* PBXTextBookmark */;
+			938710530D727A0C008D45ED /* PBXTextBookmark */ = 938710530D727A0C008D45ED /* PBXTextBookmark */;
+			938710540D727A0C008D45ED /* PBXTextBookmark */ = 938710540D727A0C008D45ED /* PBXTextBookmark */;
+			938710550D727A0C008D45ED /* PBXTextBookmark */ = 938710550D727A0C008D45ED /* PBXTextBookmark */;
+			938710560D727A0C008D45ED /* PBXTextBookmark */ = 938710560D727A0C008D45ED /* PBXTextBookmark */;
+			938710570D727A0C008D45ED /* PBXTextBookmark */ = 938710570D727A0C008D45ED /* PBXTextBookmark */;
+			938710580D727A0C008D45ED /* PBXTextBookmark */ = 938710580D727A0C008D45ED /* PBXTextBookmark */;
+			938710590D727A0C008D45ED /* PBXTextBookmark */ = 938710590D727A0C008D45ED /* PBXTextBookmark */;
+			9387105A0D727A0C008D45ED /* PBXTextBookmark */ = 9387105A0D727A0C008D45ED /* PBXTextBookmark */;
+			9387105B0D727A0C008D45ED /* PBXTextBookmark */ = 9387105B0D727A0C008D45ED /* PBXTextBookmark */;
+			9387105C0D727A0C008D45ED /* PBXTextBookmark */ = 9387105C0D727A0C008D45ED /* PBXTextBookmark */;
+			9387105D0D727A0C008D45ED /* PBXTextBookmark */ = 9387105D0D727A0C008D45ED /* PBXTextBookmark */;
+			9387105E0D727A0C008D45ED /* PBXTextBookmark */ = 9387105E0D727A0C008D45ED /* PBXTextBookmark */;
+			9387105F0D727A0C008D45ED /* PBXTextBookmark */ = 9387105F0D727A0C008D45ED /* PBXTextBookmark */;
+			938710600D727A0C008D45ED /* PBXTextBookmark */ = 938710600D727A0C008D45ED /* PBXTextBookmark */;
+			938710610D727A0C008D45ED /* PBXTextBookmark */ = 938710610D727A0C008D45ED /* PBXTextBookmark */;
+			938710620D727A0C008D45ED /* PBXTextBookmark */ = 938710620D727A0C008D45ED /* PBXTextBookmark */;
+			938710630D727A0C008D45ED /* PBXTextBookmark */ = 938710630D727A0C008D45ED /* PBXTextBookmark */;
 		};
 		sourceControlManager = 937ADE970D596FD400EF38B1 /* Source Control */;
 		userBuildSettings = {
@@ -1377,7 +1414,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 61";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2345;
 		rType = 0;
 		vrLen = 1877;
 		vrLoc = 0;
@@ -3235,7 +3272,7 @@
 	};
 	93870D980D721E2B008D45ED /* AudioNoiseSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 966}}";
 			sepNavSelRange = "{892, 0}";
 			sepNavVisRange = "{0, 915}";
 		};
@@ -3243,8 +3280,8 @@
 	93870D990D722214008D45ED /* AudioHeaders.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
-			sepNavSelRange = "{573, 26}";
-			sepNavVisRange = "{0, 668}";
+			sepNavSelRange = "{658, 0}";
+			sepNavVisRange = "{0, 691}";
 		};
 	};
 	93870D9A0D7222DB008D45ED /* PBXTextBookmark */ = {
@@ -4232,7 +4269,7 @@
 		fRef = 93870D990D722214008D45ED /* AudioHeaders.h */;
 		name = "AudioHeaders.h: 25";
 		rLen = 0;
-		rLoc = 663;
+		rLoc = 691;
 		rType = 0;
 		vrLen = 597;
 		vrLoc = 0;
@@ -4302,7 +4339,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 10;
-		rLoc = 1994;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -4432,7 +4469,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 39";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2345;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 0;
@@ -4452,7 +4489,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 39";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2345;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 0;
@@ -4782,7 +4819,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 39";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2345;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 0;
@@ -4902,7 +4939,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 39";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2345;
 		rType = 0;
 		vrLen = 1467;
 		vrLoc = 0;
@@ -4922,7 +4959,7 @@
 		fRef = 93870D990D722214008D45ED /* AudioHeaders.h */;
 		name = "AudioHeaders.h: 25";
 		rLen = 0;
-		rLoc = 663;
+		rLoc = 691;
 		rType = 0;
 		vrLen = 597;
 		vrLoc = 0;
@@ -4932,7 +4969,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 49";
 		rLen = 0;
-		rLoc = 1985;
+		rLoc = 2224;
 		rType = 0;
 		vrLen = 1749;
 		vrLoc = 0;
@@ -4982,7 +5019,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 10;
-		rLoc = 1994;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -5072,7 +5109,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 10;
-		rLoc = 1994;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -5232,7 +5269,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 10;
-		rLoc = 1994;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -5442,7 +5479,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 10;
-		rLoc = 1994;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -6171,14 +6208,14 @@
 	};
 	93870EFC0D72394F008D45ED /* AudioSilenceSource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 966}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
 			sepNavSelRange = "{200, 125}";
 			sepNavVisRange = "{0, 325}";
 		};
 	};
 	93870EFD0D72394F008D45ED /* AudioSilenceSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 966}}";
 			sepNavSelRange = "{301, 0}";
 			sepNavVisRange = "{0, 836}";
 		};
@@ -6650,9 +6687,9 @@
 	};
 	93870F440D72423D008D45ED /* AudioCompositor.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 1204}}";
-			sepNavSelRange = "{546, 0}";
-			sepNavVisRange = "{0, 1545}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 1274}}";
+			sepNavSelRange = "{1537, 0}";
+			sepNavVisRange = "{396, 1556}";
 		};
 	};
 	93870F470D726656008D45ED /* AudioSineWaveSource.h */ = {
@@ -6664,9 +6701,9 @@
 	};
 	93870F480D726656008D45ED /* AudioSineWaveSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
-			sepNavSelRange = "{1221, 0}";
-			sepNavVisRange = "{0, 1277}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 966}}";
+			sepNavSelRange = "{954, 0}";
+			sepNavVisRange = "{0, 1279}";
 		};
 	};
 	93870F6A0D726E3B008D45ED /* AudioWhiteNoiseSource.h */ = {
@@ -6678,7 +6715,7 @@
 	};
 	93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 989}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 966}}";
 			sepNavSelRange = "{968, 0}";
 			sepNavVisRange = "{0, 968}";
 		};
@@ -6760,7 +6797,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 33";
 		rLen = 0;
-		rLoc = 546;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1545;
 		vrLoc = 0;
@@ -6810,7 +6847,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 0;
@@ -7140,7 +7177,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 47";
 		rLen = 0;
-		rLoc = 1894;
+		rLoc = 1952;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 0;
@@ -7210,7 +7247,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 55";
 		rLen = 0;
-		rLoc = 1526;
+		rLoc = 1577;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 0;
@@ -7236,7 +7273,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 64";
 		rLen = 0;
-		rLoc = 1526;
+		rLoc = 1577;
 		rType = 0;
 		vrLen = 1619;
 		vrLoc = 169;
@@ -7256,7 +7293,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 55";
 		rLen = 0;
-		rLoc = 1191;
+		rLoc = 1203;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 0;
@@ -7276,7 +7313,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 55";
 		rLen = 0;
-		rLoc = 1191;
+		rLoc = 1203;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 0;
@@ -7296,7 +7333,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 59";
 		rLen = 0;
-		rLoc = 1269;
+		rLoc = 1318;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 202;
@@ -7326,7 +7363,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 69";
 		rLen = 0;
-		rLoc = 1544;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 1601;
 		vrLoc = 278;
@@ -7346,7 +7383,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 69";
 		rLen = 0;
-		rLoc = 1544;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 1677;
 		vrLoc = 202;
@@ -7366,7 +7403,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 77";
 		rLen = 0;
-		rLoc = 1847;
+		rLoc = 1905;
 		rType = 0;
 		vrLen = 1677;
 		vrLoc = 202;
@@ -7481,7 +7518,7 @@
 		isa = PBXTextBookmark;
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 26";
-		rLen = 1435;
+		rLen = 1493;
 		rLoc = 458;
 		rType = 0;
 		vrLen = 1533;
@@ -7502,7 +7539,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 41";
 		rLen = 0;
-		rLoc = 979;
+		rLoc = 981;
 		rType = 0;
 		vrLen = 818;
 		vrLoc = 0;
@@ -7522,7 +7559,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 54";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 0;
@@ -7548,7 +7585,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 47";
 		rLen = 0;
-		rLoc = 983;
+		rLoc = 985;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 0;
@@ -7558,7 +7595,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 0;
-		rLoc = 1881;
+		rLoc = 2069;
 		rType = 0;
 		vrLen = 1901;
 		vrLoc = 0;
@@ -7588,7 +7625,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 53";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1222;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 0;
@@ -7608,7 +7645,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 53";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1222;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 0;
@@ -7668,7 +7705,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 53";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1222;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 0;
@@ -7698,7 +7735,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 56";
 		rLen = 0;
-		rLoc = 1928;
+		rLoc = 2147;
 		rType = 0;
 		vrLen = 1997;
 		vrLoc = 0;
@@ -7728,7 +7765,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 33";
 		rLen = 0;
-		rLoc = 546;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1545;
 		vrLoc = 0;
@@ -7768,7 +7805,7 @@
 		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
 		name = "AudioCompositor.m: 33";
 		rLen = 0;
-		rLoc = 546;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1545;
 		vrLoc = 0;
@@ -7788,7 +7825,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 56";
 		rLen = 0;
-		rLoc = 1928;
+		rLoc = 2147;
 		rType = 0;
 		vrLen = 1997;
 		vrLoc = 0;
@@ -7818,7 +7855,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2044;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 0;
@@ -7828,7 +7865,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1372;
 		vrLoc = 0;
@@ -7848,7 +7885,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1372;
 		vrLoc = 0;
@@ -7878,7 +7915,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 63";
 		rLen = 0;
-		rLoc = 1253;
+		rLoc = 1255;
 		rType = 0;
 		vrLen = 1390;
 		vrLoc = 0;
@@ -7898,7 +7935,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 0;
@@ -7938,7 +7975,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 0;
@@ -7968,7 +8005,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 52";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2044;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 0;
@@ -7988,7 +8025,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 60";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 0;
@@ -8338,7 +8375,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 55";
 		rLen = 0;
-		rLoc = 1221;
+		rLoc = 1223;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 0;
@@ -8348,7 +8385,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 68";
 		rLen = 0;
-		rLoc = 2046;
+		rLoc = 2285;
 		rType = 0;
 		vrLen = 2082;
 		vrLoc = 5;
@@ -8368,7 +8405,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 54";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2044;
 		rType = 0;
 		vrLen = 2065;
 		vrLoc = 0;
@@ -8378,7 +8415,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 59";
 		rLen = 0;
-		rLoc = 1250;
+		rLoc = 1252;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 0;
@@ -8388,7 +8425,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 53";
 		rLen = 0;
-		rLoc = 1825;
+		rLoc = 2011;
 		rType = 0;
 		vrLen = 2048;
 		vrLoc = 0;
@@ -8398,7 +8435,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 54";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 1159;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 0;
@@ -8418,7 +8455,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 58";
 		rLen = 0;
-		rLoc = 1248;
+		rLoc = 1250;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 0;
@@ -8428,7 +8465,7 @@
 		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
 		name = "MasterAudioController.m: 68";
 		rLen = 0;
-		rLoc = 2046;
+		rLoc = 2285;
 		rType = 0;
 		vrLen = 2084;
 		vrLoc = 5;
@@ -8438,7 +8475,7 @@
 		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
 		name = "AudioSineWaveSource.m: 55";
 		rLen = 0;
-		rLoc = 1221;
+		rLoc = 1223;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 0;
@@ -8452,6 +8489,376 @@
 		rType = 0;
 		vrLen = 2081;
 		vrLoc = 5;
+	};
+	9387103F0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870D990D722214008D45ED /* AudioHeaders.h */;
+		name = "AudioHeaders.h: 28";
+		rLen = 0;
+		rLoc = 658;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	938710400D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */;
+		name = "AudioWhiteNoiseSource.m: 53";
+		rLen = 0;
+		rLoc = 968;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 0;
+	};
+	938710410D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F470D726656008D45ED /* AudioSineWaveSource.h */;
+		name = "AudioSineWaveSource.h: 15";
+		rLen = 24;
+		rLoc = 276;
+		rType = 0;
+		vrLen = 439;
+		vrLoc = 0;
+	};
+	938710420D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F430D72423D008D45ED /* AudioCompositor.h */;
+		name = "AudioCompositor.h: 16";
+		rLen = 24;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
+	};
+	938710430D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFC0D72394F008D45ED /* AudioSilenceSource.h */;
+		name = "AudioSilenceSource.h: 11";
+		rLen = 125;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	938710440D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
+		name = "AudioSineWaveSource.m: 45";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 1279;
+		vrLoc = 0;
+	};
+	938710450D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870D980D721E2B008D45ED /* AudioNoiseSource.m */;
+		name = "AudioNoiseSource.m: 47";
+		rLen = 0;
+		rLoc = 892;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 0;
+	};
+	938710460D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	938710470D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
+		name = "MasterAudioController.m: 58";
+		rLen = 0;
+		rLoc = 2072;
+		rType = 0;
+		vrLen = 2281;
+		vrLoc = 5;
+	};
+	938710480D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 57";
+		rLen = 0;
+		rLoc = 1129;
+		rType = 0;
+		vrLen = 1641;
+		vrLoc = 280;
+	};
+	938710490D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
+		name = "MasterAudioController.m: 50";
+		rLen = 0;
+		rLoc = 1785;
+		rType = 0;
+		vrLen = 2081;
+		vrLoc = 5;
+	};
+	9387104A0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	9387104B0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 74";
+		rLen = 0;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 280;
+	};
+	9387104C0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
+		name = "MasterAudioController.m: 58";
+		rLen = 0;
+		rLoc = 2100;
+		rType = 0;
+		vrLen = 2260;
+		vrLoc = 5;
+	};
+	9387104D0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870D990D722214008D45ED /* AudioHeaders.h */;
+		name = "AudioHeaders.h: 28";
+		rLen = 0;
+		rLoc = 658;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	9387104E0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	9387104F0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */;
+		name = "AudioWhiteNoiseSource.m: 53";
+		rLen = 0;
+		rLoc = 968;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 0;
+	};
+	938710500D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 74";
+		rLen = 0;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 1627;
+		vrLoc = 311;
+	};
+	938710510D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
+		name = "MasterAudioController.m: 58";
+		rLen = 0;
+		rLoc = 2072;
+		rType = 0;
+		vrLen = 2281;
+		vrLoc = 5;
+	};
+	938710520D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 74";
+		rLen = 0;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 280;
+	};
+	938710530D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
+		name = "AudioSineWaveSource.m: 55";
+		rLen = 0;
+		rLoc = 1223;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 0;
+	};
+	938710540D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F470D726656008D45ED /* AudioSineWaveSource.h */;
+		name = "AudioSineWaveSource.h: 15";
+		rLen = 24;
+		rLoc = 276;
+		rType = 0;
+		vrLen = 439;
+		vrLoc = 0;
+	};
+	938710550D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
+		name = "AudioSineWaveSource.m: 55";
+		rLen = 0;
+		rLoc = 1223;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 0;
+	};
+	938710560D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 74";
+		rLen = 0;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 280;
+	};
+	938710570D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F430D72423D008D45ED /* AudioCompositor.h */;
+		name = "AudioCompositor.h: 16";
+		rLen = 24;
+		rLoc = 270;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
+	};
+	938710580D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 61";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1630;
+		vrLoc = 308;
+	};
+	938710590D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	9387105A0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFC0D72394F008D45ED /* AudioSilenceSource.h */;
+		name = "AudioSilenceSource.h: 11";
+		rLen = 125;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	9387105B0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 61";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 280;
+	};
+	9387105C0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	9387105D0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 50";
+		rLen = 0;
+		rLoc = 993;
+		rType = 0;
+		vrLen = 1646;
+		vrLoc = 280;
+	};
+	9387105E0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F480D726656008D45ED /* AudioSineWaveSource.m */;
+		name = "AudioSineWaveSource.m: 45";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 1279;
+		vrLoc = 0;
+	};
+	9387105F0D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870D980D721E2B008D45ED /* AudioNoiseSource.m */;
+		name = "AudioNoiseSource.m: 47";
+		rLen = 0;
+		rLoc = 892;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 0;
+	};
+	938710600D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870EFD0D72394F008D45ED /* AudioSilenceSource.m */;
+		name = "AudioSilenceSource.m: 22";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 0;
+	};
+	938710610D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 57";
+		rLen = 0;
+		rLoc = 1129;
+		rType = 0;
+		vrLen = 1641;
+		vrLoc = 280;
+	};
+	938710620D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2999E950D5394AA004E77CC /* MasterAudioController.m */;
+		name = "MasterAudioController.m: 58";
+		rLen = 0;
+		rLoc = 2072;
+		rType = 0;
+		vrLen = 2281;
+		vrLoc = 5;
+	};
+	938710630D727A0C008D45ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 93870F440D72423D008D45ED /* AudioCompositor.m */;
+		name = "AudioCompositor.m: 68";
+		rLen = 0;
+		rLoc = 1537;
+		rType = 0;
+		vrLen = 1556;
+		vrLoc = 396;
 	};
 	D92591D10C6B42C700BBDBBC /* iDJ */ = {
 		activeExec = 0;
@@ -8472,9 +8879,9 @@
 	};
 	E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1144, 1078}}";
-			sepNavSelRange = "{1785, 0}";
-			sepNavVisRange = "{5, 2081}";
+			sepNavIntBoundsRect = "{{0, 0}, {1144, 1148}}";
+			sepNavSelRange = "{2072, 0}";
+			sepNavVisRange = "{5, 2281}";
 		};
 	};
 	E2999E980D5394AA004E77CC /* PartyApplication.h */ = {

@@ -24,4 +24,5 @@
 #import "AudioNoiseSource.h"
 #import "AudioWhiteNoiseSource.h"
 #import "AudioSineWaveSource.h"
+#import "AudioCompositor.h"
 #import "MasterAudioController.h"
