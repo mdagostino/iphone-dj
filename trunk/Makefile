@@ -15,10 +15,14 @@ PROJECT_NAME=iDJ
 SOURCE_ROOT=.
 SOURCE_LIST=main.m \
 		MasterAudioController.m \
+		AudioQueueSink.m \
+		AudioNoiseSource.m \
+		AudioSilenceSource.m \
+		DSPRoutines.m \
+		AudioRoutines.c \
 		PartyApplication.m \
 		CompleteView.m \
 		TurntableGLView.m \
-		TurntableAudio.m \
 		TurntableController.m \
 		Stopwatch.m \
 		Renderer.m \
@@ -26,6 +30,7 @@ SOURCE_LIST=main.m \
 		MultiTouchUIImageView.m \
 		UIGLView.m \
 		GLDrawer.m
+#		TurntableAudio.m
 FRAMEWORKS_LIST=-framework AppSupport \
 				-framework AudioToolbox \
 				-framework Celestial \

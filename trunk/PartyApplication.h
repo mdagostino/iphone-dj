@@ -14,7 +14,7 @@
 #import "TurntableController.h"
 #import "CompleteView.h"
 #import "Renderer.h"
-#import "TurntableAudio.h"
+#import "AudioHeaders.h"
 
 @interface PartyApplication : UIApplication 
 {

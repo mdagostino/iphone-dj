@@ -508,7 +508,7 @@ static GLfloat rectangle[] = {
 	}
 }
 
-inline float sq(float f1)
+static inline float sq(float f1)
 {
 	return f1 * f1;
 }
