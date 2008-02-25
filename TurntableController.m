@@ -11,11 +11,12 @@
 
 @implementation TurntableController
 
-- (id) initWithAudioStruct:(TurntableAudioStruct *) audioStruct
+//- (id) initWithAudioStruct:(TurntableAudioStruct *) audioStruct
+- (id) init
 {
 	if ( self = [super init] )
 	{
-		audioStructPtr = audioStruct;
+//		audioStructPtr = audioStruct;
 		
 		NSLog(@"doing view");
 		view = [[TurntableGLView alloc] initWithController:self];
@@ -42,10 +43,10 @@
 	return view;
 }
 
-- (TurntableAudioStruct *) audio
-{
-	return audioStructPtr;
-}
+//- (TurntableAudioStruct *) audio
+//{
+//	return audioStructPtr;
+//}
 
 
 - (void) playBackwards

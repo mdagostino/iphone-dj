@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		930959A20D711FEF0032D8F3 /* DSPRoutines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPRoutines.h; sourceTree = "<group>"; };
+		930959A30D711FEF0032D8F3 /* DSPRoutines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPRoutines.m; sourceTree = "<group>"; };
+		930959A50D7120470032D8F3 /* AudioStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStructures.h; sourceTree = "<group>"; };
+		930959D40D7126030032D8F3 /* AudioQueueSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueSink.h; sourceTree = "<group>"; };
+		930959D50D7126030032D8F3 /* AudioQueueSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueSink.m; sourceTree = "<group>"; };
+		930959DA0D7132AC0032D8F3 /* AudioSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSourceProtocol.h; sourceTree = "<group>"; };
+		930959DB0D713C200032D8F3 /* AudioChainProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioChainProtocol.h; sourceTree = "<group>"; };
+		93870D7D0D72146E008D45ED /* AudioRoutines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRoutines.h; sourceTree = "<group>"; };
+		93870D7E0D72146E008D45ED /* AudioRoutines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRoutines.m; sourceTree = "<group>"; };
+		93870D970D721E2B008D45ED /* AudioNoiseSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioNoiseSource.h; sourceTree = "<group>"; };
+		93870D980D721E2B008D45ED /* AudioNoiseSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioNoiseSource.m; sourceTree = "<group>"; };
+		93870D990D722214008D45ED /* AudioHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHeaders.h; sourceTree = "<group>"; };
+		93870EFC0D72394F008D45ED /* AudioSilenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSilenceSource.h; sourceTree = "<group>"; };
+		93870EFD0D72394F008D45ED /* AudioSilenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSilenceSource.m; sourceTree = "<group>"; };
 		E2999E930D5394AA004E77CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2999E940D5394AA004E77CC /* MasterAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterAudioController.h; sourceTree = "<group>"; };
 		E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
@@ -80,6 +94,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		930959A60D7121E70032D8F3 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				930959D40D7126030032D8F3 /* AudioQueueSink.h */,
+				930959D50D7126030032D8F3 /* AudioQueueSink.m */,
+				930959DA0D7132AC0032D8F3 /* AudioSourceProtocol.h */,
+				930959DB0D713C200032D8F3 /* AudioChainProtocol.h */,
+				93870D970D721E2B008D45ED /* AudioNoiseSource.h */,
+				93870D980D721E2B008D45ED /* AudioNoiseSource.m */,
+				93870EFC0D72394F008D45ED /* AudioSilenceSource.h */,
+				93870EFD0D72394F008D45ED /* AudioSilenceSource.m */,
+			);
+			name = Pipeline;
+			sourceTree = "<group>";
+		};
 		E2999EC60D539864004E77CC /* Core Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +147,18 @@
 		E299A0B60D53E618004E77CC /* Sound Code */ = {
 			isa = PBXGroup;
 			children = (
+				930959A60D7121E70032D8F3 /* Pipeline */,
 				E2999E940D5394AA004E77CC /* MasterAudioController.h */,
 				E2999E950D5394AA004E77CC /* MasterAudioController.m */,
 				E2999E9E0D5394AA004E77CC /* TurntableAudio.h */,
 				E2999E9F0D5394AA004E77CC /* TurntableAudio.m */,
 				E2999EA40D5394AA004E77CC /* turntablePitchCode.c */,
+				930959A20D711FEF0032D8F3 /* DSPRoutines.h */,
+				930959A30D711FEF0032D8F3 /* DSPRoutines.m */,
+				930959A50D7120470032D8F3 /* AudioStructures.h */,
+				93870D7D0D72146E008D45ED /* AudioRoutines.h */,
+				93870D7E0D72146E008D45ED /* AudioRoutines.m */,
+				93870D990D722214008D45ED /* AudioHeaders.h */,
 			);
 			name = "Sound Code";
 			sourceTree = "<group>";

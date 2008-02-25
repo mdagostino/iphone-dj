@@ -1,4 +1,5 @@
 #import "PartyApplication.h"
+#import <Foundation/NSThread.h>
 
 @implementation PartyApplication
 
@@ -47,6 +48,7 @@ static PartyApplication *_sharedInstance;
 
 - (void) applicationDidFinishLaunching: (id) unused
 {
+	[[NSThread currentThread] setName:@"main gui thread"];
 	NSLog(@"applicationDidFinishLaunching %d",[ UIHardware deviceOrientation: YES ]);
 
 
@@ -83,13 +85,14 @@ static PartyApplication *_sharedInstance;
 	
 	NSLog(@"allocating turntables, allocating their audio");
 	//TurntableAudioStruct turntables[MAX_TURNTABLES];
-	numTurntables = 2;
-	initAudioTurntables(numTurntables);
+//	numTurntables = 2;
+//	initAudioTurntables(numTurntables);
 	
 	NSLog(@"doing left");
-	leftTurntable = [[TurntableController alloc] initWithAudioStruct:(&turntables[0]) ];
+//	leftTurntable = [[TurntableController alloc] initWithAudioStruct:(&turntables[0]) ];
+	leftTurntable = [[TurntableController alloc] init];
 	NSLog(@"doing righT");
-	rightTurntable = [[TurntableController alloc] initWithAudioStruct:(&turntables[1]) ];
+	rightTurntable = [[TurntableController alloc] init];
 	
 	NSLog(@"doing dynamic array");
 	tables = [[NSMutableArray arrayWithObjects: leftTurntable, rightTurntable, nil] retain];
@@ -102,8 +105,7 @@ static PartyApplication *_sharedInstance;
     [window setContentView: cView]; 
 
 	NSLog(@"going to initAudio");
-	//initAudioController();
-
+	setupAudioChain();
 
 	NSLog(@"throwing our shit in front bitches!!");
     [window orderFront: self];
@@ -118,6 +120,8 @@ static PartyApplication *_sharedInstance;
 	NSLog(@"starting renderer");
 	[renderer start];
 
+	NSLog(@"starting audio");
+	startAudio();
 
     NSLog(@"done with applicatioonDidFinishLaunching\n");
 }
