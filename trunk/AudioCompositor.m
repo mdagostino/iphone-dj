@@ -24,8 +24,8 @@
 		buffer = NULL;
 		bufferSizeInMsec = 0;
 		bufferSizeInBytes = 0;
-		sourceA = a;
-		sourceB = b;
+		sourceA = [a retain];
+		sourceB = [b retain];
 		xFader = 0.5;
 	}
 
@@ -37,7 +37,7 @@
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
 		srandom(time(0));
-		NSLog(@"allocating AudioSilenceSource buffer");
+		NSLog(@"allocating AudioCompositor buffer");
 		if ( buffer != NULL )
 			free (buffer);
 		
@@ -47,7 +47,7 @@
 		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
-			NSLog(@"Couldn't allocate AudioSilenceSource buffer");
+			NSLog(@"Couldn't allocate AudioCompositor buffer");
 			exit(1);
 		}
 	}
@@ -58,10 +58,10 @@
 	// mix them, thx to http://www.vttoth.com/digimix.htm
 	int numShorts = bufferSizeInBytes >> 1; // bytes to shorts
 
-	// TODO: take into account xfader
+	// TODO: take into account xfader using a sigmoidal function like tanh
 	for ( int i = 0; i < numShorts; i++ )
 	{
-		int z1 = ((int)aAudio[i] * (int)bAudio[i] / 1 << 15);
+		int z1 = ((int)aAudio[i] * (int)bAudio[i]) / (1 << 15);
 		if ( aAudio[i] < 0 && bAudio[i] < 0 )
 			buffer[i] = (short) z1;
 		else
@@ -71,7 +71,7 @@
 	return buffer;
 }
 
-// takes a value from 0-1, where 0.5 = half a and half b, 0 = 100% a, 1 = 100% b, otherwise using a sigmoid to ramp up
+// takes a value from 0-1, where 0.5 = half a and half b, 0 = 100% a, 1 = 100% b, otherwise using a sigmoid (tanh) to ramp up
 - (void) setXFader:(float) newXFader;
 {
 	if ( newXFader < 0 || newXFader > 1 )
