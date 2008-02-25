@@ -10,6 +10,9 @@
 
 @interface AudioNoiseSource : NSObject <AudioSource>
 {
+	AUDIO_SHORTS_PTR buffer;
+	int bufferSizeInMsec;
+	int bufferSizeInBytes;
 }
 
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec;

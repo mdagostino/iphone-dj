@@ -1,15 +1,15 @@
 //
-//  AudioSilenceSource.m
+//  AudioWhiteNoiseSource.m
 //  iDJ
 //
 //  Created by Aaron Zinman on 2/24/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
-#import "AudioSilenceSource.h"
+#import "AudioWhiteNoiseSource.h"
 
 
-@implementation AudioSilenceSource
+@implementation AudioWhiteNoiseSource
 
 - (id) init
 {
@@ -17,8 +17,9 @@
 	{
 		buffer = NULL;
 		bufferSizeInMsec = 0;
+		bufferSizeInBytes = 0;
 	}
-
+	
 	return self;
 }
 
@@ -27,21 +28,24 @@
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
 		srandom(time(0));
-		NSLog(@"allocating AudioSilenceSource buffer");
+		NSLog(@"allocating noiseSource buffer");
 		if ( buffer != NULL )
 			free (buffer);
 		
-		int numBytes = framesToBytes(msecToFrames(msec));
-		buffer = (AUDIO_SHORTS_PTR)calloc(1, numBytes);
+		bufferSizeInBytes = framesToBytes(msecToFrames(msec));
+		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
-			NSLog(@"Couldn't allocate AudioSilenceSource buffer");
+			NSLog(@"Couldn't allocate noisegen buffer");
 			exit(1);
 		}
 		bufferSizeInMsec = msec;
-		// no need to init, calloc sets bytes to 0
 	}
 	
+	// need to keep generating random noise
+	for ( int i = 0; i < (bufferSizeInBytes/WAVE_BYTES_PER_SAMPLE); i++ )
+		buffer[i] = (short) random();
+
 	return buffer;
 }
 

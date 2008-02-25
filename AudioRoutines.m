@@ -10,9 +10,9 @@
 #include "AudioRoutines.h"
 #include <math.h>
 
-int framesToMsec(int numFrames)
+inline int framesToMsec(int numFrames)
 {
-	static float framesPerMSec = SAMPLE_RATE / 1000.0;
+//	static float framesPerMSec = SAMPLE_RATE / 1000.0;
 	static float msecPerFrame = 1.0 / (SAMPLE_RATE / 1000.0);//framesPerMSec;
 	
 	float mSec = msecPerFrame * numFrames;
@@ -25,7 +25,7 @@ int framesToMsec(int numFrames)
 	return mSec;
 }
 
-int msecToFrames(int mSec)
+inline int msecToFrames(int mSec)
 {
 	static float framesPerMSec = SAMPLE_RATE / 1000.0;
 	
@@ -39,7 +39,7 @@ int msecToFrames(int mSec)
 	return frames;
 }
 
-int framesToBytes(int numFrames)
+inline int framesToBytes(int numFrames)
 {
 	return numFrames * WAVE_BYTES_PER_SAMPLE * NUM_CHANNELS;
 }

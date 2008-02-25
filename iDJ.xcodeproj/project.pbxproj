@@ -21,6 +21,12 @@
 		93870D990D722214008D45ED /* AudioHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHeaders.h; sourceTree = "<group>"; };
 		93870EFC0D72394F008D45ED /* AudioSilenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSilenceSource.h; sourceTree = "<group>"; };
 		93870EFD0D72394F008D45ED /* AudioSilenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSilenceSource.m; sourceTree = "<group>"; };
+		93870F430D72423D008D45ED /* AudioCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCompositor.h; sourceTree = "<group>"; };
+		93870F440D72423D008D45ED /* AudioCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioCompositor.m; sourceTree = "<group>"; };
+		93870F470D726656008D45ED /* AudioSineWaveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSineWaveSource.h; sourceTree = "<group>"; };
+		93870F480D726656008D45ED /* AudioSineWaveSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSineWaveSource.m; sourceTree = "<group>"; };
+		93870F6A0D726E3B008D45ED /* AudioWhiteNoiseSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioWhiteNoiseSource.h; sourceTree = "<group>"; };
+		93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioWhiteNoiseSource.m; sourceTree = "<group>"; };
 		E2999E930D5394AA004E77CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2999E940D5394AA004E77CC /* MasterAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterAudioController.h; sourceTree = "<group>"; };
 		E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
@@ -97,16 +103,30 @@
 		930959A60D7121E70032D8F3 /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
+				93870F6F0D726F2A008D45ED /* AudioSources */,
 				930959D40D7126030032D8F3 /* AudioQueueSink.h */,
 				930959D50D7126030032D8F3 /* AudioQueueSink.m */,
 				930959DA0D7132AC0032D8F3 /* AudioSourceProtocol.h */,
 				930959DB0D713C200032D8F3 /* AudioChainProtocol.h */,
+				93870F430D72423D008D45ED /* AudioCompositor.h */,
+				93870F440D72423D008D45ED /* AudioCompositor.m */,
+			);
+			name = Pipeline;
+			sourceTree = "<group>";
+		};
+		93870F6F0D726F2A008D45ED /* AudioSources */ = {
+			isa = PBXGroup;
+			children = (
+				93870F470D726656008D45ED /* AudioSineWaveSource.h */,
+				93870F480D726656008D45ED /* AudioSineWaveSource.m */,
+				93870F6A0D726E3B008D45ED /* AudioWhiteNoiseSource.h */,
+				93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */,
 				93870D970D721E2B008D45ED /* AudioNoiseSource.h */,
 				93870D980D721E2B008D45ED /* AudioNoiseSource.m */,
 				93870EFC0D72394F008D45ED /* AudioSilenceSource.h */,
 				93870EFD0D72394F008D45ED /* AudioSilenceSource.m */,
 			);
-			name = Pipeline;
+			name = AudioSources;
 			sourceTree = "<group>";
 		};
 		E2999EC60D539864004E77CC /* Core Code */ = {
