@@ -15,13 +15,15 @@ PROJECT_NAME=iDJ
 SOURCE_ROOT=.
 SOURCE_LIST=main.m \
 		MasterAudioController.m \
+		EOFException.m \
 		AudioQueueSink.m \
 		AudioNoiseSource.m \
+		AudioEOFProtectingSource.m \
 		AudioSilenceSource.m \
 		AudioSineWaveSource.m \
 		AudioWhiteNoiseSource.m \
+		AudioWaveSource.m \
 		AudioCompositor.m \
-		DSPRoutines.m \
 		AudioRoutines.c \
 		PartyApplication.m \
 		CompleteView.m \
@@ -33,6 +35,7 @@ SOURCE_LIST=main.m \
 		MultiTouchUIImageView.m \
 		UIGLView.m \
 		GLDrawer.m
+#		DSPRoutines.m \
 #		TurntableAudio.m
 FRAMEWORKS_LIST=-framework AppSupport \
 				-framework AudioToolbox \
@@ -62,7 +65,7 @@ LIBMADFLAGS = -L$(MADPLAY) -L$(MADPLAY)/.libs/libmad.a $(MADPLAY)/.libs/libid3ta
 
 # Compiler Settings
 CC=/usr/local/bin/arm-apple-darwin-gcc
-CPPFLAGS = -I$(MADPLAY) -DAARON_TOOLCHAIN -std=c99
+CPPFLAGS = -I$(MADPLAY) -DAARON_TOOLCHAIN -std=c99 -fobjc-sjlj-exceptions
 LD=$(CC)
 LDFLAGS=-mmacosx-version-min=10.1 $(LIBMADFLAGS) -lobjc $(FRAMEWORKS_LIST)
 

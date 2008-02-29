@@ -16,9 +16,9 @@ inline int framesToMsec(int numFrames)
 	static float msecPerFrame = 1.0 / (SAMPLE_RATE / 1000.0);//framesPerMSec;
 	
 	float mSec = msecPerFrame * numFrames;
-	if ( mSec - floorf(mSec) > 0 )
+	if ( mSec - floorf(mSec) > 0.001 )
 	{
-		NSLog(@"ERROR: got a non-integer amount of msec: %f", mSec);
+		NSLog(@"ERROR: got a non-integer amount of msec: %f for %d frames", mSec, numFrames);
 		exit(-1);
 	}
 	

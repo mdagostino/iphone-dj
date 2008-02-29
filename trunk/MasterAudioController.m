@@ -47,20 +47,34 @@ void setupAudioChain()
 
 	AudioNoiseSource *noiseGen = [[AudioNoiseSource alloc] init];
 	AudioWhiteNoiseSource *wnoiseGen = [[AudioWhiteNoiseSource alloc] init];
+	// combined produces DTMF 1
 	AudioSineWaveSource *sinGen = [[AudioSineWaveSource alloc] initWithFrequency:1209];
 	AudioSineWaveSource *sinGenB = [[AudioSineWaveSource alloc] initWithFrequency:697];
 
-	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:sinGen andSourceB:sinGenB];
+
+	AudioWaveSource *waveSource = [[AudioWaveSource alloc] initWithFilePath:"/file1.wav"];
+	AudioWaveSource *waveSource2 = [[AudioWaveSource alloc] initWithFilePath:"/file2.wav"];
+	AudioEOFProtectingSource *eofWave1 = [[AudioEOFProtectingSource alloc] initWithUnprotectedSource:waveSource];
+	AudioEOFProtectingSource *eofWave2 = [[AudioEOFProtectingSource alloc] initWithUnprotectedSource:waveSource2];
+
+
+//	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:sinGen andSourceB:sinGenB];
+	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:eofWave1 andSourceB:eofWave2];
+
 
 //	[aqSink setSource:noiseGen];
 //	[aqSink setSource:wnoiseGen];
 //	[aqSink setSource:sinGenB];
 	[aqSink setSource:composite];
+//	[aqSink setSource:eofWave];
 
 	[noiseGen release];
 	[wnoiseGen release];
 	[sinGen release];
 	[sinGenB release];
+	[waveSource release];
+	[eofWave1 release];
+	[eofWave2 release];
 	
 	NSLog(@"setupAudioChain complete");
 }

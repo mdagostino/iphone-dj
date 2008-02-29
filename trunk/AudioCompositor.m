@@ -34,14 +34,14 @@
 
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec
 {
-	if ( buffer == NULL || bufferSizeInMsec != msec ) 
+	if ( buffer == NULL || bufferSizeInMsec != abs(msec) ) 
 	{
 		NSLog(@"allocating AudioCompositor buffer");
 		if ( buffer != NULL )
 			free (buffer);
 		
-		bufferSizeInBytes = framesToBytes(msecToFrames(msec));
-		bufferSizeInMsec = msec;
+		bufferSizeInBytes = framesToBytes(msecToFrames(abs(msec)));
+		bufferSizeInMsec = abs(msec);
 
 		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
 		if ( buffer == NULL )
