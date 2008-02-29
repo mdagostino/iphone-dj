@@ -55,18 +55,18 @@ void pitchShift(AUDIO_SHORTS_PTR src, int numShortsIn, AUDIO_SHORTS_PTR dst, int
       // l0 r0 l1 r1 l2 r2 l3 r3
       //  0  1  2  3  4  5  6  7
       //  e.g. ratio = 1.23 = 123%
-    case MODE_BILINEAR_INTERP:        //  e.g. 212
+    case MODE_BILINEARINTERP:        //  e.g. 212
 
       srcIdx    = i>>1;               //       106
       srcIdx    = srcIdx*ratio;       //       130
       srcIdx_f  = srcIdx*ratio;       //       130.38
       mantissa  = srcIdx_f - srcIdx;  //          .38
 
-      *( dst + i     ) =  (1-mantissa) * (src+srcIdx*2    ) + (mantissa) * (src+srcIdx*2 + 2)  ;   // left channel
-      *( dst + i + 1 ) =  (1-mantissa) * (src+srcIdx*2 + 1) + (mantissa) * (src+srcIdx*2 + 3)  ;   // right channel
+      *( dst + i     ) =  (1-mantissa) * *(src+srcIdx*2    ) + (mantissa) * *(src+srcIdx*2 + 2)  ;   // left channel
+      *( dst + i + 1 ) =  (1-mantissa) * *(src+srcIdx*2 + 1) + (mantissa) * *(src+srcIdx*2 + 3)  ;   // right channel
 
       break;
-
+	}
   }
 }
 
