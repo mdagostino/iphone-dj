@@ -25,6 +25,12 @@
 
 - (AUDIO_SHORTS_PTR) getAudio:(int) msec
 {
+	if ( msec < 0 )
+	{
+		msec *= -1;
+		NSLog(@"AudioWhiteNoiseSource only goes in 1 direction");
+	}
+
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
 		srandom(time(0));

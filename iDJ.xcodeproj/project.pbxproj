@@ -27,6 +27,15 @@
 		93870F480D726656008D45ED /* AudioSineWaveSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSineWaveSource.m; sourceTree = "<group>"; };
 		93870F6A0D726E3B008D45ED /* AudioWhiteNoiseSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioWhiteNoiseSource.h; sourceTree = "<group>"; };
 		93870F6B0D726E3B008D45ED /* AudioWhiteNoiseSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioWhiteNoiseSource.m; sourceTree = "<group>"; };
+		93FE97740D767889009BC2BA /* AudioSeekProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSeekProtocol.h; sourceTree = "<group>"; };
+		93FE97750D7678D0009BC2BA /* AudioWaveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioWaveSource.h; sourceTree = "<group>"; };
+		93FE97760D7678D0009BC2BA /* AudioWaveSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioWaveSource.m; sourceTree = "<group>"; };
+		93FE97B40D77D994009BC2BA /* EOFException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOFException.h; sourceTree = "<group>"; };
+		93FE97B50D77D994009BC2BA /* EOFException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOFException.m; sourceTree = "<group>"; };
+		93FE97E00D77DD89009BC2BA /* AudioEOFProtectingSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEOFProtectingSource.h; sourceTree = "<group>"; };
+		93FE97E10D77DD89009BC2BA /* AudioEOFProtectingSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEOFProtectingSource.m; sourceTree = "<group>"; };
+		93FE98AF0D77EFAB009BC2BA /* AudioThreadedForwardBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioThreadedForwardBuffer.h; sourceTree = "<group>"; };
+		93FE98B00D77EFAB009BC2BA /* AudioThreadedForwardBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioThreadedForwardBuffer.m; sourceTree = "<group>"; };
 		E2999E930D5394AA004E77CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2999E940D5394AA004E77CC /* MasterAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterAudioController.h; sourceTree = "<group>"; };
 		E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
@@ -107,6 +116,7 @@
 				930959D40D7126030032D8F3 /* AudioQueueSink.h */,
 				930959D50D7126030032D8F3 /* AudioQueueSink.m */,
 				930959DA0D7132AC0032D8F3 /* AudioSourceProtocol.h */,
+				93FE97740D767889009BC2BA /* AudioSeekProtocol.h */,
 				930959DB0D713C200032D8F3 /* AudioChainProtocol.h */,
 				93870F430D72423D008D45ED /* AudioCompositor.h */,
 				93870F440D72423D008D45ED /* AudioCompositor.m */,
@@ -125,6 +135,14 @@
 				93870D980D721E2B008D45ED /* AudioNoiseSource.m */,
 				93870EFC0D72394F008D45ED /* AudioSilenceSource.h */,
 				93870EFD0D72394F008D45ED /* AudioSilenceSource.m */,
+				93FE97750D7678D0009BC2BA /* AudioWaveSource.h */,
+				93FE97760D7678D0009BC2BA /* AudioWaveSource.m */,
+				93FE97B40D77D994009BC2BA /* EOFException.h */,
+				93FE97B50D77D994009BC2BA /* EOFException.m */,
+				93FE97E00D77DD89009BC2BA /* AudioEOFProtectingSource.h */,
+				93FE97E10D77DD89009BC2BA /* AudioEOFProtectingSource.m */,
+				93FE98AF0D77EFAB009BC2BA /* AudioThreadedForwardBuffer.h */,
+				93FE98B00D77EFAB009BC2BA /* AudioThreadedForwardBuffer.m */,
 			);
 			name = AudioSources;
 			sourceTree = "<group>";

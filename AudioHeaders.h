@@ -15,14 +15,23 @@
 #import "AudioQueue.h"
 
 // iDJ
+#import "EOFException.h"
 #import "AudioRoutines.h"
 #import "AudioStructures.h"
 #import "DSPRoutines.h"
+
 #import "AudioSourceProtocol.h"
 #import "AudioChainProtocol.h"
+#import "AudioSeekProtocol.h"
 #import "AudioQueueSink.h"
+
+#import "AudioSilenceSource.h"
+#import "AudioEOFProtectingSource.h"
 #import "AudioNoiseSource.h"
 #import "AudioWhiteNoiseSource.h"
 #import "AudioSineWaveSource.h"
+#import "AudioWaveSource.h"
+
 #import "AudioCompositor.h"
+
 #import "MasterAudioController.h"

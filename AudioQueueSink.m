@@ -54,7 +54,13 @@ static void AQBufferCallback( void *inCallbackStruct, AudioQueueRef audioQueue, 
 	else
 	{
 		AUDIO_SHORTS_PTR givenAudio = [source getAudio: framesToMsec(infoStruct.frameCount) ];
-		memcpy(dstAudioBuffer, givenAudio, outBuffer->mAudioDataByteSize);
+		if ( givenAudio != NULL )
+			memcpy(dstAudioBuffer, givenAudio, outBuffer->mAudioDataByteSize);
+		else
+		{
+			bzero(dstAudioBuffer, outBuffer->mAudioDataByteSize);
+			NSLog(@"AudioQueueSink: got null audio ptr!!!");
+		}
 	}
 	
 	AudioQueueEnqueueBuffer(audioQueue, outBuffer, 0, NULL);
@@ -120,7 +126,8 @@ static void AQBufferCallback( void *inCallbackStruct, AudioQueueRef audioQueue, 
 	
 
 	// buffer == 20 msec
-	in.frameCount = msecToFrames(20);
+//	in.frameCount = msecToFrames(20);
+	in.frameCount = msecToFrames(1000);
 	
 	UInt32 bufferBytes = in.frameCount * in.mDataFormat.mBytesPerFrame;
 	for (int i=0; i<AUDIO_BUFFERS; i++) {

@@ -1,5 +1,6 @@
 #import "PartyApplication.h"
 #import <Foundation/NSThread.h>
+#include <sched.h>
 
 @implementation PartyApplication
 
@@ -51,6 +52,8 @@ static PartyApplication *_sharedInstance;
 	[[NSThread currentThread] setName:@"main gui thread"];
 	NSLog(@"applicationDidFinishLaunching %d",[ UIHardware deviceOrientation: YES ]);
 
+	// make our process max priority
+	setpriority(PRIO_PROCESS, 0, PRIO_MIN); //0 means current process
 
 	NSLog(@"LKPurpleServerIsRunning: %d", LKPurpleServerIsRunning());
 	NSLog(@"LKContext localContext: %@", [LKContext localContext]);

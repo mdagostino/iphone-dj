@@ -26,7 +26,6 @@
 {
 	if ( buffer == NULL || bufferSizeInMsec != msec ) 
 	{
-		srandom(time(0));
 		NSLog(@"allocating AudioSilenceSource buffer");
 		if ( buffer != NULL )
 			free (buffer);

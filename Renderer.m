@@ -45,7 +45,7 @@ Renderer *singleton;
 
 
 	[renderTimer startFPS];
-	id timer = [NSTimer scheduledTimerWithTimeInterval: 1.0/90
+	id timer = [NSTimer scheduledTimerWithTimeInterval: 1.0/30
                 target: self
                 selector: @selector(tick:)
                 userInfo: nil
