@@ -7,7 +7,7 @@
 //
 
 #import "AudioSilenceSource.h"
-
+#import <math.h>
 
 @implementation AudioSilenceSource
 
@@ -16,29 +16,30 @@
 	if ( self = [super init] )
 	{
 		buffer = NULL;
-		bufferSizeInMsec = 0;
+		bufferSizeInMsec = 0.0;
 	}
 
 	return self;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec
 {
-	if ( buffer == NULL || bufferSizeInMsec != msec ) 
+	if ( buffer == NULL || bufferSizeInMsec < fabs(msec) ) 
 	{
 		NSLog(@"allocating AudioSilenceSource buffer");
 		if ( buffer != NULL )
 			free (buffer);
 		
-		int numBytes = framesToBytes(msecToFrames(msec));
-		buffer = (AUDIO_SHORTS_PTR)calloc(1, numBytes);
+		int numBytes = framesToBytes(msecToFrames(fabs(msec)));
+		buffer = (AUDIO_SHORTS_PTR)realloc(buffer, numBytes);
 		if ( buffer == NULL )
 		{
 			NSLog(@"Couldn't allocate AudioSilenceSource buffer");
 			exit(1);
 		}
+		
 		bufferSizeInMsec = msec;
-		// no need to init, calloc sets bytes to 0
+		bzero((void *)buffer, numBytes);
 	}
 	
 	return buffer;

@@ -22,7 +22,7 @@
 	return self;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec
 {
 	@try
 	{

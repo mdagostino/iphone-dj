@@ -22,7 +22,7 @@
 		}
 
 		buffer = NULL;
-		bufferSizeInMsec = 0;
+		bufferSizeInMsec = 0.0;
 		bufferSizeInBytes = 0;
 		sourceA = [a retain];
 		sourceB = [b retain];
@@ -32,18 +32,16 @@
 	return self;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec
 {
-	if ( buffer == NULL || bufferSizeInMsec != abs(msec) ) 
+	if ( buffer == NULL || bufferSizeInMsec < fabs(msec) ) 
 	{
 		NSLog(@"allocating AudioCompositor buffer");
-		if ( buffer != NULL )
-			free (buffer);
 		
-		bufferSizeInBytes = framesToBytes(msecToFrames(abs(msec)));
-		bufferSizeInMsec = abs(msec);
+		bufferSizeInBytes = framesToBytes(msecToFrames(fabs(msec)));
+		bufferSizeInMsec = fabs(msec);
 
-		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
+		buffer = (AUDIO_SHORTS_PTR)realloc(buffer, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
 			NSLog(@"Couldn't allocate AudioCompositor buffer");
@@ -55,7 +53,7 @@
 	AUDIO_SHORTS_PTR bAudio = [sourceB getAudio:msec];
 	
 	// mix them preventing cliping
-	int numShorts = bufferSizeInBytes >> 1; // bytes to shorts
+	int numShorts = (bufferSizeInMsec == msec ? bufferSizeInBytes >> 1 : framesToShorts(msecToFrames(msec)) ); 
 
 	// TODO: take into account xfader using a sigmoidal function like tanh
 	for ( int i = 0; i < numShorts; i++ )

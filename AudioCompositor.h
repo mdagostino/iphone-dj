@@ -12,15 +12,15 @@
 @interface AudioCompositor : NSObject <AudioSource> 
 {
 	AUDIO_SHORTS_PTR buffer;
-	int bufferSizeInMsec;
-	int bufferSizeInBytes;
+	float bufferSizeInMsec;
+	unsigned int bufferSizeInBytes;
 
 	id <AudioSource> sourceA;
 	id <AudioSource> sourceB;
 	float xFader;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec;
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec;
 
 // can only set the sources on creation for thread performance reasons
 - (id) initWithSourceA:(id <AudioSource>) a andSourceB:(id <AudioSource>) b;

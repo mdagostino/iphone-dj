@@ -24,8 +24,8 @@
 }
 
 - (id) initWithFilePath:(char *)filePath;
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec;
-- (void) seekRelative:(int) relativeMsec;
-- (void) seekAbsolute:(unsigned int) absMsec;
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec;
+- (void) seekRelative:(float) relativeMsec;
+- (void) seekAbsolute:(float) absMsec;
 
 @end

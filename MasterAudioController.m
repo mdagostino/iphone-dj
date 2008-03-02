@@ -59,14 +59,26 @@ void setupAudioChain()
 
 
 //	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:sinGen andSourceB:sinGenB];
-	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:eofWave1 andSourceB:eofWave2];
+//	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:eofWave1 andSourceB:eofWave2];
+
+
+	AudioPitchFilter *pitchFilter = [[AudioPitchFilter alloc] init];
+	[pitchFilter setSource:eofWave1];
+	[pitchFilter setSpeedRelativeToOne:0.5];
+
+
+	AudioPitchFilter *pitchFilter2 = [[AudioPitchFilter alloc] init];
+	[pitchFilter2 setSource:eofWave2];
+	[pitchFilter2 setSpeedRelativeToOne:2.0];
+	AudioCompositor *composite = [[AudioCompositor alloc] initWithSourceA:pitchFilter andSourceB:pitchFilter2];
 
 
 //	[aqSink setSource:noiseGen];
 //	[aqSink setSource:wnoiseGen];
 //	[aqSink setSource:sinGenB];
-	[aqSink setSource:composite];
+//	[aqSink setSource:composite];
 //	[aqSink setSource:eofWave];
+	[aqSink setSource:pitchFilter];
 
 	[noiseGen release];
 	[wnoiseGen release];
@@ -75,6 +87,9 @@ void setupAudioChain()
 	[waveSource release];
 	[eofWave1 release];
 	[eofWave2 release];
+	[pitchFilter release];
+	[pitchFilter2 release];
+	[composite release];
 	
 	NSLog(@"setupAudioChain complete");
 }

@@ -11,14 +11,14 @@
 @interface AudioSineWaveSource : NSObject <AudioSource>
 {
 	AUDIO_SHORTS_PTR buffer;
-	int bufferSizeInMsec;
-	int bufferSizeInBytes;
+	float bufferSizeInMsec;
+	unsigned int bufferSizeInBytes;
 	double frequency;
 	double omega, b, y1, y2;
 }
 
 - (id) initWithFrequency:(double) freq;
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec;
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec;
 
 @end
 

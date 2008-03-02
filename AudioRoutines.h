@@ -9,6 +9,7 @@
 
 #import "AudioHeaders.h"
 
-int framesToMsec(int numFrames);
-int msecToFrames(int mSec);
+float framesToMsec(int numFrames);
+int msecToFrames(float mSec);
 int framesToBytes(int numFrames);
+int framesToShorts(int numFrames);

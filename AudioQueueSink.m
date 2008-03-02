@@ -126,8 +126,7 @@ static void AQBufferCallback( void *inCallbackStruct, AudioQueueRef audioQueue, 
 	
 
 	// buffer == 20 msec
-//	in.frameCount = msecToFrames(20);
-	in.frameCount = msecToFrames(1000);
+	in.frameCount = msecToFrames(AUDIO_BUFFER_SIZE_IN_MSEC);
 	
 	UInt32 bufferBytes = in.frameCount * in.mDataFormat.mBytesPerFrame;
 	for (int i=0; i<AUDIO_BUFFERS; i++) {

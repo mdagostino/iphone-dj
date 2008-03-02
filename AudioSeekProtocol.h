@@ -10,7 +10,7 @@
 
 @protocol AudioSeekable
 
-- (void) seekRelative:(int) relativeMsec;
-- (void) seekAbsolute:(unsigned int) absMsec;
+- (void) seekRelative:(float) relativeMsec;
+- (void) seekAbsolute:(float) absMsec;
 
 @end

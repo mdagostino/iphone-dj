@@ -11,9 +11,9 @@
 @interface AudioSilenceSource : NSObject <AudioSource>
 {
 	AUDIO_SHORTS_PTR buffer;
-	int bufferSizeInMsec;
+	float bufferSizeInMsec;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec;
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec;
 
 @end

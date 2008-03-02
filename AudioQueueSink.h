@@ -9,6 +9,7 @@
 #import "AudioHeaders.h"
 
 #define AUDIO_BUFFERS 3
+#define AUDIO_BUFFER_SIZE_IN_MSEC 100
 
 typedef struct AQCallbackStruct {
     AudioQueueRef queue;

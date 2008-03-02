@@ -15,6 +15,6 @@
 }
 
 - (id) initWithSource:(id<AudioSource>) source;
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec;
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec;
 
 @end

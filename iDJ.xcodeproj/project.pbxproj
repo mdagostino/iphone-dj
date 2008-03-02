@@ -36,6 +36,10 @@
 		93FE97E10D77DD89009BC2BA /* AudioEOFProtectingSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEOFProtectingSource.m; sourceTree = "<group>"; };
 		93FE98AF0D77EFAB009BC2BA /* AudioThreadedForwardBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioThreadedForwardBuffer.h; sourceTree = "<group>"; };
 		93FE98B00D77EFAB009BC2BA /* AudioThreadedForwardBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioThreadedForwardBuffer.m; sourceTree = "<group>"; };
+		93FE98E10D77F7C5009BC2BA /* BufferTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferTest.h; sourceTree = "<group>"; };
+		93FE98E20D77F7C5009BC2BA /* BufferTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BufferTest.m; sourceTree = "<group>"; };
+		93FE99340D77FFC6009BC2BA /* AudioPitchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPitchFilter.h; sourceTree = "<group>"; };
+		93FE99350D77FFC6009BC2BA /* AudioPitchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPitchFilter.m; sourceTree = "<group>"; };
 		E2999E930D5394AA004E77CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2999E940D5394AA004E77CC /* MasterAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterAudioController.h; sourceTree = "<group>"; };
 		E2999E950D5394AA004E77CC /* MasterAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterAudioController.m; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				93FE97E10D77DD89009BC2BA /* AudioEOFProtectingSource.m */,
 				93FE98AF0D77EFAB009BC2BA /* AudioThreadedForwardBuffer.h */,
 				93FE98B00D77EFAB009BC2BA /* AudioThreadedForwardBuffer.m */,
+				93FE99340D77FFC6009BC2BA /* AudioPitchFilter.h */,
+				93FE99350D77FFC6009BC2BA /* AudioPitchFilter.m */,
 			);
 			name = AudioSources;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				E2999E9B0D5394AA004E77CC /* Renderer.m */,
 				E2999E9C0D5394AA004E77CC /* Stopwatch.h */,
 				E2999E9D0D5394AA004E77CC /* Stopwatch.m */,
+				93FE98E10D77F7C5009BC2BA /* BufferTest.h */,
+				93FE98E20D77F7C5009BC2BA /* BufferTest.m */,
 			);
 			name = "User Interface Code";
 			sourceTree = "<group>";

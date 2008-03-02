@@ -11,13 +11,14 @@
 #import <UIKit/UIKit.h> //gives us NSObject, etc
 #include <stdlib.h> //malloc, random
 #include <strings.h> //bzero
+#include <math.h>
 #define AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER // needed for AudioQueue
 #import "AudioQueue.h"
 
 // iDJ
 #import "EOFException.h"
-#import "AudioRoutines.h"
 #import "AudioStructures.h"
+#import "AudioRoutines.h"
 #import "DSPRoutines.h"
 
 #import "AudioSourceProtocol.h"
@@ -32,6 +33,7 @@
 #import "AudioSineWaveSource.h"
 #import "AudioWaveSource.h"
 
+#import "AudioPitchFilter.h"
 #import "AudioCompositor.h"
 
 #import "MasterAudioController.h"
