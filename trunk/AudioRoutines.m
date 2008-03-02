@@ -7,10 +7,10 @@
  *
  */
 
-#include "AudioRoutines.h"
-#include <math.h>
+#import "AudioRoutines.h"
 
-inline int framesToMsec(int numFrames)
+
+float framesToMsec(int numFrames)
 {
 //	static float framesPerMSec = SAMPLE_RATE / 1000.0;
 	static float msecPerFrame = 1.0 / (SAMPLE_RATE / 1000.0);//framesPerMSec;
@@ -18,21 +18,22 @@ inline int framesToMsec(int numFrames)
 	float mSec = msecPerFrame * numFrames;
 	if ( mSec - floorf(mSec) > 0.001 )
 	{
-		NSLog(@"ERROR: got a non-integer amount of msec: %f for %d frames", mSec, numFrames);
-		exit(-1);
+//		NSLog(@"ERROR: got a non-integer amount of msec: %f for %d frames", mSec, numFrames);
+		NSLog(@"NOTE POTENTIAL PROBLEM: got a non-integer amount of msec: %f for %d frames", mSec, numFrames);
+//		exit(-1);
 	}
 	
 	return mSec;
 }
 
-inline int msecToFrames(int mSec)
+int msecToFrames(float mSec)
 {
 	static float framesPerMSec = SAMPLE_RATE / 1000.0;
 	
 	float frames = framesPerMSec * mSec;
 	if ( frames - floorf(frames) > 0 )
 	{
-		NSLog(@"ERROR: got a non-integer amount of frames: %f", frames);
+		NSLog(@"ERROR: got a non-integer amount of frames: %f given %f msec", frames, mSec);
 		exit(-1);
 	}
 	
@@ -42,4 +43,9 @@ inline int msecToFrames(int mSec)
 inline int framesToBytes(int numFrames)
 {
 	return numFrames * WAVE_BYTES_PER_SAMPLE * NUM_CHANNELS;
+}
+
+inline int framesToShorts(int numFrames)
+{
+	return numFrames * WAVE_SHORTS_PER_SAMPLE * NUM_CHANNELS;
 }

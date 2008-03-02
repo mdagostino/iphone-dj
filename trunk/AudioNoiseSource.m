@@ -15,14 +15,14 @@
 	if ( self = [super init] )
 	{
 		buffer = NULL;
-		bufferSizeInMsec = 0;
+		bufferSizeInMsec = 0.0;
 		bufferSizeInBytes = 0;
 	}
 	
 	return self;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec
 {
 	if ( msec < 0 )
 	{
@@ -30,7 +30,7 @@
 		NSLog(@"AudioNoiseSource only goes in 1 direction");
 	}
 
-	if ( buffer == NULL || bufferSizeInMsec != msec ) 
+	if ( buffer == NULL || bufferSizeInMsec < msec ) 
 	{
 		srandom(time(0));
 		NSLog(@"allocating noiseSource buffer");
@@ -38,7 +38,7 @@
 			free (buffer);
 		
 		bufferSizeInBytes = framesToBytes(msecToFrames(msec));
-		buffer = (AUDIO_SHORTS_PTR)calloc(1, bufferSizeInBytes);
+		buffer = (AUDIO_SHORTS_PTR)realloc(buffer, bufferSizeInBytes);
 		if ( buffer == NULL )
 		{
 			NSLog(@"Couldn't allocate noisegen buffer");

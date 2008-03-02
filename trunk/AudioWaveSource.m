@@ -12,7 +12,7 @@
 #import "AudioWaveSource.h"
 #include <stdio.h>	// for fprintf(), perror() 
 #include <fcntl.h>	// for open() 
-#include <math.h>	// for abs() 	
+#include <math.h>	// for fabs() 	
 #include <stdlib.h>	// for exit() 
 #include <unistd.h>	// for read(), write(), close() 
 #include <string.h>	// for strncmp()
@@ -36,10 +36,12 @@ typedef struct waveInfo
 	int		chunkSize;
 } waveInfo_t;
 
+
+#define MAP_NOCACHE	 0x0400 /* don't cache pages for this mapping */
 BOOL mmapFile(int fileHandler, waveInfo_t* wave)
 {
 	wave->fileSizeInBytes = lseek( fileHandler, 0, SEEK_END );
-	wave->filePtr = (char *) mmap( NULL, wave->fileSizeInBytes, PROT_READ, MAP_SHARED, fileHandler, 0 );
+	wave->filePtr = (char *) mmap( NULL, wave->fileSizeInBytes, PROT_READ, MAP_SHARED | MAP_NOCACHE, fileHandler, 0 );
 	if ( wave->filePtr == MAP_FAILED ) 
 		return NO;
 
@@ -96,6 +98,12 @@ BOOL readAndSetWaveInfo(waveInfo_t* wave)
 	if ( self = [super init] )
 	{
 		waveInfo_t waveInfo;
+		
+		// read ahead
+		BOOL readAhead = YES;
+//		fcntl(inFD,F_RDAHEAD,readAhead);
+
+		
 		fileHandler = open( filePath, O_RDONLY );
 		if ( fileHandler < 0 ) 
 		{ 
@@ -148,16 +156,16 @@ BOOL readAndSetWaveInfo(waveInfo_t* wave)
 	return self;
 }
 
-- (AUDIO_SHORTS_PTR) getAudio:(int) msec
+- (AUDIO_SHORTS_PTR) getAudio:(float) msec
 {
 	[self seekRelative:msec];
 	return buffer;
 }
 
 
-- (void) seekRelative:(int) relativeMsec
+- (void) seekRelative:(float) relativeMsec
 {
-	int bytesNeeded = framesToBytes(msecToFrames(abs(relativeMsec)));
+	int bytesNeeded = framesToBytes(msecToFrames(fabs(relativeMsec)));
 
 	if ( relativeMsec < 0 )
 	{
@@ -183,8 +191,14 @@ BOOL readAndSetWaveInfo(waveInfo_t* wave)
 	}
 }
 
-- (void) seekAbsolute:(unsigned int) absMsec
+- (void) seekAbsolute:(float) absMsec
 {
+	if ( absMsec < 0)
+	{
+		NSLog(@"Cannot seek absolutely to a negative number %f", absMsec);
+		return;
+	}
+	
 	if ( absMsec > bufferSizeInMsec )
 	{
 		buffer = bufferStart;

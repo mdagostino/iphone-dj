@@ -24,7 +24,8 @@ SOURCE_LIST=main.m \
 		AudioWhiteNoiseSource.m \
 		AudioWaveSource.m \
 		AudioCompositor.m \
-		AudioRoutines.c \
+		AudioRoutines.m \
+		AudioPitchFilter.m \
 		PartyApplication.m \
 		CompleteView.m \
 		TurntableGLView.m \
@@ -34,8 +35,8 @@ SOURCE_LIST=main.m \
 		CrossFaderView.m \
 		MultiTouchUIImageView.m \
 		UIGLView.m \
+		DSPRoutines.m \
 		GLDrawer.m
-#		DSPRoutines.m \
 #		TurntableAudio.m
 FRAMEWORKS_LIST=-framework AppSupport \
 				-framework AudioToolbox \
