@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{72, 0}";
+			sepNavVisRange = "{0, 407}";
+			sepNavWindowFrame = "{{399, 89}, {595, 662}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 801}";
+			sepNavWindowFrame = "{{629, 110}, {595, 662}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* iDJ-iPhoneSDK */ = {
+		activeExec = 0;
+		executables = (
+			E2F27B700D85E7BF00FA6B64 /* iDJ-iPhoneSDK */,
+		);
+	};
+	289E37740D53116900ACCF19 /* iDJView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{259, 0}";
+			sepNavVisRange = "{0, 259}";
+			sepNavWindowFrame = "{{15, 111}, {595, 662}}";
+		};
+	};
+	289E37750D53116900ACCF19 /* iDJView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {924, 557}}";
+			sepNavSelRange = "{349, 10}";
+			sepNavVisRange = "{0, 506}";
+			sepNavWindowFrame = "{{61, 69}, {595, 662}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E2F27B700D85E7BF00FA6B64 /* iDJ-iPhoneSDK */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* iDJ-iPhoneSDK */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* iDJ-iPhoneSDK */,
+		);
+		codeSenseManager = E2F27B800D85E7CA00FA6B64 /* Code sense */;
+		executables = (
+			E2F27B700D85E7BF00FA6B64 /* iDJ-iPhoneSDK */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					581,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 226986972;
+			PBXWorkspaceStateSaveDate = 226986972;
+		};
+		perUserProjectItems = {
+			E2006CA60D877F5600EBE59E /* PBXTextBookmark */ = E2006CA60D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CA70D877F5600EBE59E /* PBXTextBookmark */ = E2006CA70D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CA90D877F5600EBE59E /* PBXTextBookmark */ = E2006CA90D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CAA0D877F5600EBE59E /* PBXTextBookmark */ = E2006CAA0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CAB0D877F5600EBE59E /* PBXTextBookmark */ = E2006CAB0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CAC0D877F5600EBE59E /* PBXTextBookmark */ = E2006CAC0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CBA0D877F5600EBE59E /* PBXTextBookmark */ = E2006CBA0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CBB0D877F5600EBE59E /* PBXTextBookmark */ = E2006CBB0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CBD0D877F5600EBE59E /* PBXTextBookmark */ = E2006CBD0D877F5600EBE59E /* PBXTextBookmark */;
+			E2006CE30D87819400EBE59E /* PBXBookmark */ = E2006CE30D87819400EBE59E /* PBXBookmark */;
+			E2006CE40D87819400EBE59E /* PBXBookmark */ = E2006CE40D87819400EBE59E /* PBXBookmark */;
+			E2006CE70D87819400EBE59E /* PBXBookmark */ = E2006CE70D87819400EBE59E /* PBXBookmark */;
+			E2006CE80D87819400EBE59E /* PBXBookmark */ = E2006CE80D87819400EBE59E /* PBXBookmark */;
+			E2006D160D87853A00EBE59E /* PBXTextBookmark */ = E2006D160D87853A00EBE59E /* PBXTextBookmark */;
+			E2006D1A0D87860000EBE59E /* PBXTextBookmark */ = E2006D1A0D87860000EBE59E /* PBXTextBookmark */;
+			E2006D1B0D87860000EBE59E /* PBXTextBookmark */ = E2006D1B0D87860000EBE59E /* PBXTextBookmark */;
+			E2006D470D878BA900EBE59E /* PBXTextBookmark */ = E2006D470D878BA900EBE59E /* PBXTextBookmark */;
+			E2006DDA0D878C5E00EBE59E /* PBXTextBookmark */ = E2006DDA0D878C5E00EBE59E /* PBXTextBookmark */;
+			E2F27C3C0D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C3C0D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C3D0D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C3D0D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C3E0D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C3E0D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C400D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C400D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C490D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C490D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C530D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C530D87627C00FA6B64 /* PBXTextBookmark */;
+			E2F27C540D87627C00FA6B64 /* PBXTextBookmark */ = E2F27C540D87627C00FA6B64 /* PBXTextBookmark */;
+		};
+		sourceControlManager = E2F27B7F0D85E7CA00FA6B64 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 387}";
+			sepNavWindowFrame = "{{15, 111}, {595, 662}}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* iDJ-iPhoneSDK_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{105, 90}";
+			sepNavVisRange = "{0, 195}";
+		};
+	};
+	8D1107310486CEB800E47090 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{468, 0}";
+			sepNavVisRange = "{0, 802}";
+		};
+	};
+	E2006CA60D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.m */;
+		name = "iDJ_iPhoneSDKAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 801;
+		vrLoc = 0;
+	};
+	E2006CA70D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.h */;
+		name = "iDJ_iPhoneSDKAppDelegate.h: 5";
+		rLen = 0;
+		rLoc = 72;
+		rType = 0;
+		vrLen = 407;
+		vrLoc = 0;
+	};
+	E2006CA90D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* iDJ-iPhoneSDK_Prefix.pch */;
+		name = "iDJ-iPhoneSDK_Prefix.pch: 4";
+		rLen = 90;
+		rLoc = 105;
+		rType = 0;
+		vrLen = 195;
+		vrLoc = 0;
+	};
+	E2006CAA0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 387;
+		vrLoc = 0;
+	};
+	E2006CAB0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		name = "Info.plist: 14";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 0;
+	};
+	E2006CAC0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2006CAD0D877F5600EBE59E /* UIControl.h */;
+		name = "UIControl.h: 67";
+		rLen = 51;
+		rLoc = 2590;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 1663;
+	};
+	E2006CAD0D877F5600EBE59E /* UIControl.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIControl.h;
+		path = /Developer/Platforms/AspenSimulator.platform/Developer/SDKs/AspenSimulator1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIControl.h;
+		sourceTree = "<absolute>";
+	};
+	E2006CBA0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 387;
+		vrLoc = 0;
+	};
+	E2006CBB0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		name = "Info.plist: 14";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 0;
+	};
+	E2006CBD0D877F5600EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2006CBE0D877F5600EBE59E /* UIControl.h */;
+		name = "UIControl.h: 67";
+		rLen = 51;
+		rLoc = 2590;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 1663;
+	};
+	E2006CBE0D877F5600EBE59E /* UIControl.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIControl.h;
+		path = /Developer/Platforms/AspenSimulator.platform/Developer/SDKs/AspenSimulator1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIControl.h;
+		sourceTree = "<absolute>";
+	};
+	E2006CE30D87819400EBE59E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E2006CDF0D87814700EBE59E /* fader_background.png */;
+	};
+	E2006CE40D87819400EBE59E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E2006CDE0D87814700EBE59E /* fader_button.png */;
+	};
+	E2006CE70D87819400EBE59E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E2006CDE0D87814700EBE59E /* fader_button.png */;
+	};
+	E2006CE80D87819400EBE59E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E2006CDF0D87814700EBE59E /* fader_background.png */;
+	};
+	E2006D160D87853A00EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289E37750D53116900ACCF19 /* iDJView.m */;
+		name = "iDJView.m: 17";
+		rLen = 10;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 0;
+	};
+	E2006D1A0D87860000EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289E37740D53116900ACCF19 /* iDJView.h */;
+		name = "iDJView.h: 17";
+		rLen = 0;
+		rLoc = 259;
+		rType = 0;
+		vrLen = 259;
+		vrLoc = 0;
+	};
+	E2006D1B0D87860000EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2F27BB40D85F2CE00FA6B64 /* FaderControl.h */;
+		name = "FaderControl.h: 13";
+		rLen = 0;
+		rLoc = 245;
+		rType = 0;
+		vrLen = 252;
+		vrLoc = 0;
+	};
+	E2006D470D878BA900EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */;
+		name = "FaderControl.m: 46";
+		rLen = 0;
+		rLoc = 1559;
+		rType = 0;
+		vrLen = 1241;
+		vrLoc = 0;
+	};
+	E2006DDA0D878C5E00EBE59E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */;
+		name = "FaderControl.m: 16";
+		rLen = 0;
+		rLoc = 277;
+		rType = 0;
+		vrLen = 1241;
+		vrLoc = 0;
+	};
+	E2F27B700D85E7BF00FA6B64 /* iDJ-iPhoneSDK */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "iDJ-iPhoneSDK";
+		sourceDirectories = (
+		);
+	};
+	E2F27B7F0D85E7CA00FA6B64 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	E2F27B800D85E7CA00FA6B64 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E2F27BB40D85F2CE00FA6B64 /* FaderControl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 557}}";
+			sepNavSelRange = "{245, 0}";
+			sepNavVisRange = "{0, 252}";
+			sepNavWindowFrame = "{{294, 64}, {595, 662}}";
+		};
+	};
+	E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 1036}}";
+			sepNavSelRange = "{277, 0}";
+			sepNavVisRange = "{0, 1241}";
+		};
+	};
+	E2F27C3C0D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.m */;
+		name = "iDJ_iPhoneSDKAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	E2F27C3D0D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* iDJ-iPhoneSDK_Prefix.pch */;
+		name = "iDJ-iPhoneSDK_Prefix.pch: 4";
+		rLen = 90;
+		rLoc = 105;
+		rType = 0;
+		vrLen = 195;
+		vrLoc = 0;
+	};
+	E2F27C3E0D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.h */;
+		name = "iDJ_iPhoneSDKAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 404;
+		vrLoc = 0;
+	};
+	E2F27C400D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289E37750D53116900ACCF19 /* iDJView.m */;
+		name = "MyView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 190;
+		vrLoc = 0;
+	};
+	E2F27C490D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 289E37740D53116900ACCF19 /* iDJView.h */;
+		name = "MyView.h: 10";
+		rLen = 0;
+		rLoc = 186;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	E2F27C530D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2F27BB40D85F2CE00FA6B64 /* FaderControl.h */;
+		name = "FaderControl.h: 1";
+		rLen = 0;
+		rLoc = 2;
+		rType = 0;
+		vrLen = 219;
+		vrLoc = 0;
+	};
+	E2F27C540D87627C00FA6B64 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */;
+		name = "FaderControl.m: 28";
+		rLen = 0;
+		rLoc = 2342;
+		rType = 0;
+		vrLen = 661;
+		vrLoc = 0;
+	};
+}

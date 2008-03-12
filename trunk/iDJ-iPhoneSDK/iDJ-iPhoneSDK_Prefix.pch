@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'iDJ-iPhoneSDK' target in the 'iDJ-iPhoneSDK' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
