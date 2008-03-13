@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iDJUtility.h"
 #import "FaderControl.h"
+#import "TurntableControl.h"
 
 @interface iDJView : UIView {
-	FaderControl* _faderControl;
+	FaderControl* _crossFader;
+	TurntableControl* _turntable1;
+	TurntableControl* _turntable2;
 }
 
 @end
