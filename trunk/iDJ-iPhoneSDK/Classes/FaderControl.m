@@ -54,7 +54,7 @@ CALayer *_buttonLayer;
     for (UITouch *myTouch in touches)
     {
 		// Get location, and move button
-        CGPoint touchLocation = [myTouch locationInView];
+        CGPoint touchLocation = [myTouch locationInView:self];
 		//NSLog(@"touchesChangedWithEvent: %.0f;%.0f", touchLocation.x, touchLocation.y);
 		int newX = touchLocation.x;
 		if (newX < _buttonLayer.bounds.size.width/2)
