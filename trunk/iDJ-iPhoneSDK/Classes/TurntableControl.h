@@ -11,6 +11,9 @@
 #import "iDJUtility.h"
 
 @interface TurntableControl : UIView {
+	CALayer *_discLayer;
+	CALayer *_pickupLayer;
+	float _rotation;
 }
 
 -(void) onTimerEvent:(NSTimer *)timer;

@@ -8,15 +8,13 @@
 
 #import "TurntableControl.h"
 
-CALayer *_discLayer;
-CALayer *_pickupLayer;
-float _rotation = 0;
 
 @implementation TurntableControl
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
 		// Set up the disc
+		_rotation = 0;
 		_discLayer = [CALayer layer];
 		_discLayer.doubleSided = NO;
 		_discLayer.bounds = frame;
@@ -36,13 +34,24 @@ float _rotation = 0;
 /** onTimerEvent: called every 1/FRAMES_PER_SECOND second. */
 -(void) onTimerEvent:(NSTimer *)timer;
 {
+	//NSLog(@"is multithreaded: %d", [NSThread isMultiThreaded]);
+	
 	// Redraw screen
-	_rotation += 3.0;
-	///_rotation = _rotation % 360.0;
-	if (_rotation > 360)
-		_rotation = 0;
-	//NSLog(@"turntable.rotate: value %.0f", _rotation);
-	[_discLayer setValue:[NSNumber numberWithFloat: degreesToRadians(_rotation)] forKeyPath:@"transform.rotation"];
+	_rotation += 10.0;
+	NSLog(@"angle is: %g (%g)", _rotation, degreesToRadians(_rotation));
+	if (_rotation > 180.0)
+		_rotation -= 360.0;
+	//[_discLayer setValue:[NSNumber numberWithFloat: degreesToRadians(_rotation)] forKeyPath:@"transform.rotation"];
+	
+	CGAffineTransform tr;
+	float r = degreesToRadians(_rotation);
+	tr.a = cos(r);
+	tr.b = -sin(r);
+	tr.c = -tr.b;
+	tr.d = tr.a;
+	tr.tx = tr.ty = 0;
+	
+	[_discLayer setAffineTransform: tr];
 }
 
 /*
