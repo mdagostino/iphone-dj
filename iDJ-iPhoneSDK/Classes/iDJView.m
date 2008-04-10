@@ -8,7 +8,7 @@
 
 #import "iDJView.h"
 
-static float FRAMES_PER_SECOND = 20.0;
+static float FRAMES_PER_SECOND = 10.0;
 
 @implementation iDJView
 
