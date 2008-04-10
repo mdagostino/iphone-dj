@@ -16,6 +16,10 @@
 		E2006CD80D8780F600EBE59E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2006CD70D8780F600EBE59E /* QuartzCore.framework */; };
 		E2006CE00D87814700EBE59E /* fader_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E2006CDE0D87814700EBE59E /* fader_button.png */; };
 		E2006CE10D87814700EBE59E /* fader_background.png in Resources */ = {isa = PBXBuildFile; fileRef = E2006CDF0D87814700EBE59E /* fader_background.png */; };
+		E262319C0DAD6111003A3776 /* MusicLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E262319B0DAD6111003A3776 /* MusicLibrary.framework */; };
+		E2AF8E6B0D89CF8100F23598 /* TurntableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF8E6A0D89CF8100F23598 /* TurntableControl.m */; };
+		E2AF8E6D0D89D04600F23598 /* turntable_disc.png in Resources */ = {isa = PBXBuildFile; fileRef = E2AF8E6C0D89D04600F23598 /* turntable_disc.png */; };
+		E2AF8FA50D89D83700F23598 /* iDJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF8FA40D89D83700F23598 /* iDJUtility.m */; };
 		E2F27BB60D85F2CE00FA6B64 /* FaderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,12 @@
 		E2006CD70D8780F600EBE59E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E2006CDE0D87814700EBE59E /* fader_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fader_button.png; path = Images/fader_button.png; sourceTree = "<group>"; };
 		E2006CDF0D87814700EBE59E /* fader_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fader_background.png; path = Images/fader_background.png; sourceTree = "<group>"; };
+		E262319B0DAD6111003A3776 /* MusicLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MusicLibrary.framework; path = System/Library/PrivateFrameworks/MusicLibrary.framework; sourceTree = SDKROOT; };
+		E2AF8E690D89CF8100F23598 /* TurntableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurntableControl.h; sourceTree = "<group>"; };
+		E2AF8E6A0D89CF8100F23598 /* TurntableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurntableControl.m; sourceTree = "<group>"; };
+		E2AF8E6C0D89D04600F23598 /* turntable_disc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turntable_disc.png; path = Images/turntable_disc.png; sourceTree = "<group>"; };
+		E2AF8FA30D89D83700F23598 /* iDJUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDJUtility.h; sourceTree = "<group>"; };
+		E2AF8FA40D89D83700F23598 /* iDJUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iDJUtility.m; sourceTree = "<group>"; };
 		E2F27BB40D85F2CE00FA6B64 /* FaderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaderControl.h; sourceTree = "<group>"; };
 		E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = FaderControl.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 /* End PBXFileReference section */
@@ -47,6 +57,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
 				E2006CD80D8780F600EBE59E /* QuartzCore.framework in Frameworks */,
+				E262319C0DAD6111003A3776 /* MusicLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +67,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				289E37740D53116900ACCF19 /* iDJView.h */,
-				289E37750D53116900ACCF19 /* iDJView.m */,
 				1D3623240D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.h */,
 				1D3623250D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.m */,
+				E2AF8FA30D89D83700F23598 /* iDJUtility.h */,
+				E2AF8FA40D89D83700F23598 /* iDJUtility.m */,
+				289E37740D53116900ACCF19 /* iDJView.h */,
+				289E37750D53116900ACCF19 /* iDJView.m */,
+				E2AF8E690D89CF8100F23598 /* TurntableControl.h */,
+				E2AF8E6A0D89CF8100F23598 /* TurntableControl.m */,
 				E2F27BB40D85F2CE00FA6B64 /* FaderControl.h */,
 				E2F27BB50D85F2CE00FA6B64 /* FaderControl.m */,
 			);
@@ -69,6 +84,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E262319B0DAD6111003A3776 /* MusicLibrary.framework */,
 				E2006CD70D8780F600EBE59E /* QuartzCore.framework */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -116,6 +132,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2AF8E6C0D89D04600F23598 /* turntable_disc.png */,
 				E2006CDE0D87814700EBE59E /* fader_button.png */,
 				E2006CDF0D87814700EBE59E /* fader_background.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -176,6 +193,7 @@
 			files = (
 				E2006CE00D87814700EBE59E /* fader_button.png in Resources */,
 				E2006CE10D87814700EBE59E /* fader_background.png in Resources */,
+				E2AF8E6D0D89D04600F23598 /* turntable_disc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,8 @@
 				1D3623260D0F684500981E51 /* iDJ_iPhoneSDKAppDelegate.m in Sources */,
 				289E37760D53116900ACCF19 /* iDJView.m in Sources */,
 				E2F27BB60D85F2CE00FA6B64 /* FaderControl.m in Sources */,
+				E2AF8E6B0D89CF8100F23598 /* TurntableControl.m in Sources */,
+				E2AF8FA50D89D83700F23598 /* iDJUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +221,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -217,6 +241,10 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDJ-iPhoneSDK_Prefix.pch";
@@ -238,7 +266,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = aspen1.2;
+				SDKROOT = iphoneos2.0;
 			};
 			name = Debug;
 		};
@@ -247,7 +275,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				PREBINDING = NO;
-				SDKROOT = aspen1.2;
+				SDKROOT = iphoneos2.0;
 			};
 			name = Release;
 		};
