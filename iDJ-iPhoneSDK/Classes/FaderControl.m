@@ -31,6 +31,7 @@ CALayer *_buttonLayer;
 		_buttonLayer.position = CGPointMake(frame.size.width/2 - 2, frame.size.height/2);
 		UIImage *buttonImage = [UIImage imageNamed:@"fader_button.png"];
 		_buttonLayer.contents = (id)buttonImage.CGImage;
+		// does not work [_buttonLayer setAnimationDuration:0.0];
 		//[_buttonLayer setValue:[NSNumber numberWithInt: 45] forKeyPath:@"transform.rotation"];
 		[self.layer addSublayer:_buttonLayer];
     }
