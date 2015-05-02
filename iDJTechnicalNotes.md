@@ -1,0 +1,42 @@
+# iDJ Architecture #
+
+
+## Core ##
+
+main
+PartyApplication (:UIApplication) - main class that gets launched
+
+
+## User Interface ##
+
+CompleteView (:UIGLView) - the entire view (both turntables). The multitouch code is in completeview.
+
+TurntableController (:NSObject) - each turntable is represented by a TurntableController
+
+TurntableGLView (:GLDrawer) - where you stick per-turntable drawing code
+
+CrossFaderView (:UISliderControl) - slider for the crossfader
+
+GLDrawer (:NSObject) - protocol for things that are drawable using GL
+
+UIGLView (:UIView) - UIView that has an OpenGL backing
+
+UIGLCameraView (:) - extends UIGLView for camera movement
+
+Renderer (:NSObject) - main rendering timer, keeps track of "dirty" objs
+
+Stopwatch (:NSObject) - helper class to time things
+
+
+## Sound ##
+
+TurntableAudio.m
+
+MasterAudioController.m
+
+turntablePitchCode.c
+
+
+## Old Code ##
+
+MultiTouchUIImageView (:UIImageView) - old code to extend UIImageView
